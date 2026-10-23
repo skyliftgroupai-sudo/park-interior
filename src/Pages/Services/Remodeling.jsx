@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet-async";
 import heroImg from "../../assets/hero/hero3.jpg";
 import img1 from "../../assets/remodeling/kitchen.jpg";
 import img2 from "../../assets/remodeling/bathroom.jpg";
@@ -74,45 +73,7 @@ export default function HomeRemodeling() {
     return (
         <div className="bg-white">
 
-            {/* ===== SEO META TAGS ===== */}
-            <Helmet>
-                <title>Home Remodeling Services | Kitchen, Bathroom & Basement Renovation Experts</title>
-                <meta
-                    name="description"
-                    content="Professional home remodeling services including kitchen, bathroom, and basement renovations. Custom designs, expert craftsmanship, and high-quality finishes. Get a free quote today."
-                />
-                <meta
-                    name="keywords"
-                    content="home remodeling services, kitchen remodeling, bathroom remodeling, basement remodeling, home renovation, custom cabinetry, bathroom renovation contractor, basement finishing, home improvement"
-                />
-                <meta name="robots" content="index, follow" />
-                <link rel="canonical" href="https://www.parkinteriorsvt.com/home-remodeling" />
-
-                {/* Open Graph (Facebook, LinkedIn) */}
-                <meta property="og:type" content="website" />
-                <meta property="og:title" content="Home Remodeling Services | Kitchen, Bathroom & Basement Renovation" />
-                <meta
-                    property="og:description"
-                    content="Expert home remodeling services. Custom kitchen, bathroom, and basement renovations built to last. Free consultation available."
-                />
-                <meta property="og:image" content={heroImg} />
-                <meta property="og:url" content="https://www.parkinteriorsvt.com/home-remodeling" />
-                <meta property="og:site_name" content="Your Company Name" />
-
-                {/* Twitter Card */}
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Home Remodeling Services | Kitchen, Bathroom & Basement Renovation" />
-                <meta
-                    name="twitter:description"
-                    content="Expert home remodeling services. Custom kitchen, bathroom, and basement renovations built to last."
-                />
-                <meta name="twitter:image" content={heroImg} />
-
-                {/* JSON-LD structured data */}
-                <script type="application/ld+json">
-                    {JSON.stringify(structuredData)}
-                </script>
-            </Helmet>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
             {/* HERO */}
             <section

@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet-async";
 import heroImg from "../../assets/hero/hero3.jpg";
 import img1 from "../../assets/addition/garge.jpg";
 import imge2 from "../../assets/addition/room.avif";
@@ -48,7 +47,7 @@ const structuredData = {
     "serviceType": "Home Addition Services",
     "provider": {
         "@type": "GeneralContractor",
-        "name": "Park Interiorsvt",
+        "name": "Park Interiors",
         "url": "https://www.parkinteriorsvt.com",
     },
     "areaServed": {
@@ -74,45 +73,7 @@ export default function HomeAddition() {
     return (
         <div className="bg-white">
 
-            {/* ===== SEO META TAGS ===== */}
-            <Helmet>
-                <title>Home Addition Services | Room, Second Floor & Garage Additions</title>
-                <meta
-                    name="description"
-                    content="Professional home addition services including room additions, second floor additions, and garage additions. Expand your living space with expert contractors. Free quote available."
-                />
-                <meta
-                    name="keywords"
-                    content="home addition services, room addition, second floor addition, garage addition, home extension, house addition contractor, home expansion, in-law suite addition, sunroom addition, custom home additions"
-                />
-                <meta name="robots" content="index, follow" />
-                <link rel="canonical" href="https://www.parkinteriorsvt.com/home-addition" />
-
-                {/* Open Graph */}
-                <meta property="og:type" content="website" />
-                <meta property="og:title" content="Home Addition Services | Room, Second Floor & Garage Additions" />
-                <meta
-                    property="og:description"
-                    content="Expert home addition services. Custom room, second floor, and garage additions designed to expand your living space and increase home value."
-                />
-                <meta property="og:image" content={heroImg} />
-                <meta property="og:url" content="https://www.parkinteriorsvt.com/home-addition" />
-                <meta property="og:site_name" content="Your Company Name" />
-
-                {/* Twitter Card */}
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Home Addition Services | Room, Second Floor & Garage Additions" />
-                <meta
-                    name="twitter:description"
-                    content="Expert home addition services. Custom room, second floor, and garage additions built to last."
-                />
-                <meta name="twitter:image" content={heroImg} />
-
-                {/* JSON-LD structured data */}
-                <script type="application/ld+json">
-                    {JSON.stringify(structuredData)}
-                </script>
-            </Helmet>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
             {/* HERO */}
             <section

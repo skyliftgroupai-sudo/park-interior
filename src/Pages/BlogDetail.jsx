@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet-async";
 import { Link, useParams } from "react-router-dom";
 import {
     Calendar,
@@ -101,27 +100,7 @@ export default function BlogDetail() {
     return (
         <div className="bg-white text-gray-900">
 
-            {/* ===== SEO META TAGS ===== */}
-            <Helmet>
-                <title>{blog.seo.metaTitle}</title>
-                <meta name="description" content={blog.seo.metaDescription} />
-                <meta name="keywords" content={blog.seo.keywords} />
-                <meta name="robots" content="index, follow" />
-                <link
-                    rel="canonical"
-                    href={`https://www.parkinteriorsvt.com/blog/${blog.slug}`}
-                />
-
-                {/* Open Graph */}
-                <meta property="og:type" content="article" />
-                <meta property="og:title" content={blog.title} />
-                <meta property="og:description" content={blog.seo.metaDescription} />
-                <meta property="og:image" content={blog.image} />
-                <meta
-                    property="og:url"
-                    content={`https://www.parkinteriorsvt.com/blog/${blog.slug}`}
-                />
-            </Helmet>
+            
 
             {/* HERO */}
             <section

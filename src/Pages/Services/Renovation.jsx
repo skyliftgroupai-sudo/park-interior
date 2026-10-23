@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet-async";
 import heroImg from "../../assets/hero/hero3.jpg";
 import img1 from "../../assets/work/work1.jpg";
 import img2 from "../../assets/work/work2.jpg";
@@ -18,44 +17,7 @@ export default function HomeRenovation() {
   return (
     <div className="bg-white">
 
-      {/* SEO META TAGS */}
-      <Helmet>
-        <title>Home Renovation Services | Full, Interior & Exterior Remodeling Experts</title>
-        <meta
-          name="description"
-          content="Professional home renovation services including full home remodeling, interior upgrades, and exterior renovation. Trusted contractors for kitchen, bathroom, flooring, siding, and roofing. Get a free quote today."
-        />
-        <meta
-          name="keywords"
-          content="home renovation, home remodeling services, full home renovation, interior renovation, exterior renovation, kitchen renovation, bathroom remodeling, house renovation contractors, residential renovation, home improvement services, home makeover, modern home renovation, renovation experts, home upgrade services"
-        />
-        <meta name="robots" content="index, follow" />
-        <meta name="author" content="Home Renovation Services" />
-        <link rel="canonical" href="https://www.parkinteriorsvt.com/home-renovations" />
-
-        {/* Open Graph (Facebook, LinkedIn, WhatsApp) */}
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Home Renovation Services | Full, Interior & Exterior Remodeling Experts" />
-        <meta
-          property="og:description"
-          content="Transform your home with expert renovation services. Full home remodeling, interior upgrades, exterior renovations, and modern design solutions tailored to your lifestyle."
-        />
-        <meta property="og:image" content={heroImg} />
-        <meta property="og:url" content="https://www.parkinteriorsvt.com/home-renovations" />
-        <meta property="og:site_name" content="Home Renovation Services" />
-
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Home Renovation Services | Trusted Remodeling Experts" />
-        <meta
-          name="twitter:description"
-          content="Expert home renovation services for interiors, exteriors, and full home makeovers. Quality craftsmanship and modern design that adds value to your property."
-        />
-        <meta name="twitter:image" content={heroImg} />
-
-        {/* Schema.org Structured Data */}
-        <script type="application/ld+json">
-          {JSON.stringify({
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Service",
             "serviceType": "Home Renovation Services",
@@ -101,9 +63,7 @@ export default function HomeRenovation() {
                 }
               ]
             }
-          })}
-        </script>
-      </Helmet>
+          }) }} />
 
       {/* HERO */}
       <section

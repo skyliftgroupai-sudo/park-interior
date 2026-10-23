@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Layout from "../Layout";
 import Home from "./Pages/Home";
 import About from "./Pages/Aboutus";
@@ -31,15 +31,13 @@ import NotFound from "./Pages/NotFound";
 
 function App() {
   return (
-    <BrowserRouter>
-
-      <Routes>
+    <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="about-us" element={<About />} />
           <Route path="contact-us" element={<ContactUs />} />
           <Route path="gallery" element={<Gallery />} />
-          <Route path="term-condation" element={<TermsAndConditions />} />
+          <Route path="terms-and-conditions" element={<TermsAndConditions />} />
           <Route path="privacy-policy" element={<PrivacyPolicy />} />
           <Route path="faq" element={<FAQPage />} />
           <Route path="blog" element={<Blog />} />
@@ -55,7 +53,7 @@ function App() {
           <Route path="milton-vt" element={<Milton />} />
           <Route path="richmond-vt" element={<Richmond />} />
           <Route path="hinesburg-vt" element={<Hinesburg />} />
-          <Route path="colchestor-vt" element={<ColchesterHomeServices />} />
+          <Route path="colchester-vt" element={<ColchesterHomeServices />} />
           <Route path="fairfax-vt" element={<Fairfax />} />
           <Route path="underhill-vt" element={<Underhill />} />
           <Route path="jericho-vt" element={<Jericho />} />
@@ -64,7 +62,6 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
-    </BrowserRouter>
   );
 }
 

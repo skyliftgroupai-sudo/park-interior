@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { Home, ArrowLeft, Phone } from "lucide-react";
 
@@ -15,12 +14,7 @@ const fadeUp = {
 export default function NotFound() {
     return (
         <div className="bg-white text-gray-900">
-            {/* SEO — keep 404s out of the index */}
-            <Helmet>
-                <title>404 — Page Not Found | Park Interiors</title>
-                <meta name="description" content="The page you're looking for doesn't exist or has been moved." />
-                <meta name="robots" content="noindex, follow" />
-            </Helmet>
+            
 
             <section className="relative flex min-h-[70vh] items-center justify-center px-6 py-24 text-center">
                 <motion.div

@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { Calendar, User, ArrowRight, Clock } from "lucide-react";
 import blogs from "./Blog/blogData";
@@ -17,20 +16,7 @@ export default function Blog() {
     return (
         <div className="bg-white text-gray-900">
 
-            {/* ===== SEO META TAGS ===== */}
-            <Helmet>
-                <title>Blog | Home Remodeling & Interior Design Tips | Park Interiors</title>
-                <meta
-                    name="description"
-                    content="Read the Park Interiors blog for expert tips on home remodeling, renovation, and residential interior design that create comfortable, functional, and stylish living spaces."
-                />
-                <meta
-                    name="keywords"
-                    content="home remodeling blog, interior design tips, home renovation ideas, Jericho remodeling, residential interior design, Park Interiors"
-                />
-                <meta name="robots" content="index, follow" />
-                <link rel="canonical" href="https://www.parkinteriorsvt.com/blog" />
-            </Helmet>
+            
 
             {/* HERO */}
             <section className="relative py-28 px-6 text-center bg-black">

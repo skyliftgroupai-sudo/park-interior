@@ -1,6 +1,4 @@
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet-async";
-
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
   show: { opacity: 1, y: 0, transition: { duration: 0.6 } },
@@ -17,37 +15,7 @@ export default function TermsAndConditions() {
   return (
     <div className="bg-white text-gray-800 min-h-screen">
 
-      {/* SEO Meta Tags */}
-      <Helmet>
-        <title>Terms of Service | Park Interiors VT - Home Remodeling & Roofing</title>
-        <meta
-          name="description"
-          content="Read the Terms of Service for Park Interiors LLC. Learn about our home remodeling, roofing, siding, painting, and renovation service agreements, payment terms, communications policy, and warranties in Vermont."
-        />
-        <meta
-          name="keywords"
-          content="Park Interiors VT terms of service, Park Interiors LLC terms, Vermont home remodeling terms, roofing service agreement, contractor terms Vermont, parkinteriorsvt.com"
-        />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://parkinteriorsvt.com/terms" />
-
-        {/* Open Graph */}
-        <meta property="og:title" content="Terms of Service | Park Interiors VT" />
-        <meta
-          property="og:description"
-          content="Review the Terms of Service for Park Interiors LLC, covering home remodeling, additions, roofing, siding, and painting services across Vermont."
-        />
-        <meta property="og:url" content="https://parkinteriorsvt.com/terms" />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Terms of Service | Park Interiors VT" />
-        <meta
-          name="twitter:description"
-          content="Read the Terms of Service governing Park Interiors LLC's home improvement services in Vermont."
-        />
-      </Helmet>
+      
 
       {/* Hero Section */}
       <section className="relative py-24 px-6 text-center bg-white border-b border-gray-200">

@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet-async";
 import heroImg from "../../assets/painting/image1.jpg";
 import img1 from "../../assets/painting/image3.webp";
 import img2 from "../../assets/painting/image2.webp";
@@ -19,7 +18,7 @@ const services = [
         id: "interior-painting",
         title: "Interior Painting",
         description:
-            "Transform your living spaces with professional interior painting services from Park Interiorsvt. We deliver flawless finishes on walls, ceilings, trim, doors, cabinets, and accent features using premium low-VOC paints from trusted brands like Sherwin-Williams and Benjamin Moore. Our painters handle every step — from drywall repair, sanding, and priming to careful taping, edging, and final coats — protecting your floors and furniture throughout. Whether you're refreshing a single room or repainting your entire home, we create clean, modern, color-coordinated interiors that elevate your style and increase your home's value.",
+            "Transform your living spaces with professional interior painting services from Park Interiors. We deliver flawless finishes on walls, ceilings, trim, doors, cabinets, and accent features using premium low-VOC paints from trusted brands like Sherwin-Williams and Benjamin Moore. Our painters handle every step — from drywall repair, sanding, and priming to careful taping, edging, and final coats — protecting your floors and furniture throughout. Whether you're refreshing a single room or repainting your entire home, we create clean, modern, color-coordinated interiors that elevate your style and increase your home's value.",
         image: img1,
         alt: "Professional interior painting service with smooth wall finish and modern color",
     },
@@ -27,7 +26,7 @@ const services = [
         id: "exterior-painting",
         title: "Exterior Painting",
         description:
-            "Protect and beautify your home with expert exterior painting services built to withstand harsh weather, UV exposure, and seasonal wear. Park Interiorsvt handles full exterior preparation including pressure washing, scraping, sanding, caulking, and priming before applying weather-resistant, fade-proof exterior paints designed for siding, trim, doors, shutters, decks, and stucco. Our skilled crew delivers a smooth, even finish that boosts curb appeal, prevents moisture damage, and adds years of protection — backed by professional workmanship and long-lasting results.",
+            "Protect and beautify your home with expert exterior painting services built to withstand harsh weather, UV exposure, and seasonal wear. Park Interiors handles full exterior preparation including pressure washing, scraping, sanding, caulking, and priming before applying weather-resistant, fade-proof exterior paints designed for siding, trim, doors, shutters, decks, and stucco. Our skilled crew delivers a smooth, even finish that boosts curb appeal, prevents moisture damage, and adds years of protection — backed by professional workmanship and long-lasting results.",
         image: img2,
         alt: "Exterior house painting with weather-resistant paint and clean finish",
     },
@@ -35,7 +34,7 @@ const services = [
         id: "commercial-painting",
         title: "Commercial Painting",
         description:
-            "Elevate your business with high-quality commercial painting services from Park Interiorsvt. We paint offices, retail stores, restaurants, warehouses, medical facilities, apartment buildings, and more — using durable, low-odor commercial-grade paints that minimize downtime and disruption. Our team works flexible hours including evenings and weekends to keep your business running, and we handle everything from color consultation and surface prep to final touch-ups. Get clean, professional, brand-aligned finishes that impress clients, customers, and employees alike.",
+            "Elevate your business with high-quality commercial painting services from Park Interiors. We paint offices, retail stores, restaurants, warehouses, medical facilities, apartment buildings, and more — using durable, low-odor commercial-grade paints that minimize downtime and disruption. Our team works flexible hours including evenings and weekends to keep your business running, and we handle everything from color consultation and surface prep to final touch-ups. Get clean, professional, brand-aligned finishes that impress clients, customers, and employees alike.",
         image: img3,
         alt: "Commercial painting service for office and retail spaces",
     },
@@ -48,7 +47,7 @@ const structuredData = {
     "serviceType": "Painting Services",
     "provider": {
         "@type": "GeneralContractor",
-        "name": "Park Interiorsvt",
+        "name": "Park Interiors",
         "url": "https://www.parkinteriorsvt.com",
     },
     "areaServed": {
@@ -74,46 +73,7 @@ export default function Painting() {
     return (
         <div className="bg-white">
 
-            {/* ===== SEO META TAGS ===== */}
-            <Helmet>
-                <title>Painting Services | Interior, Exterior & Commercial Painters | Park Interiorsvt</title>
-                <meta
-                    name="description"
-                    content="Professional painting services by Park Interiorsvt. Expert interior painting, exterior painting, and commercial painting with premium materials and flawless finishes. Free quote available."
-                />
-                <meta
-                    name="keywords"
-                    content="painting services, interior painting, exterior painting, commercial painting, house painters, professional painters, residential painting, office painting, wall painting, Park Interiorsvt"
-                />
-                <meta name="robots" content="index, follow" />
-                <meta name="author" content="Park Interiorsvt" />
-                <link rel="canonical" href="https://www.parkinteriorsvt.com/painting" />
-
-                {/* Open Graph */}
-                <meta property="og:type" content="website" />
-                <meta property="og:title" content="Painting Services | Interior, Exterior & Commercial Painters | Park Interiorsvt" />
-                <meta
-                    property="og:description"
-                    content="Trusted painting contractors offering interior, exterior, and commercial painting services. Premium paints, expert prep, and lasting finishes from Park Interiorsvt."
-                />
-                <meta property="og:image" content={heroImg} />
-                <meta property="og:url" content="https://www.parkinteriorsvt.com/painting" />
-                <meta property="og:site_name" content="Park Interiorsvt" />
-
-                {/* Twitter Card */}
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Painting Services | Interior, Exterior & Commercial Painters | Park Interiorsvt" />
-                <meta
-                    name="twitter:description"
-                    content="Expert interior, exterior, and commercial painting services from Park Interiorsvt. Free estimates available."
-                />
-                <meta name="twitter:image" content={heroImg} />
-
-                {/* JSON-LD structured data */}
-                <script type="application/ld+json">
-                    {JSON.stringify(structuredData)}
-                </script>
-            </Helmet>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
             {/* HERO */}
             <section
@@ -143,7 +103,7 @@ export default function Painting() {
                         transition={{ delay: 0.2 }}
                         className="text-gray-300 text-lg"
                     >
-                        Park Interiorsvt offers expert interior painting, exterior painting,
+                        Park Interiors offers expert interior painting, exterior painting,
                         and commercial painting services designed to transform homes and
                         businesses with flawless finishes, premium paints, and skilled
                         craftsmanship — delivering lasting beauty and protection in every
@@ -163,7 +123,7 @@ export default function Painting() {
                         </h2>
                         <p className="text-gray-600 max-w-2xl mx-auto">
                             From whole-home interior painting and weather-resistant exterior
-                            coatings to large-scale commercial projects, Park Interiorsvt
+                            coatings to large-scale commercial projects, Park Interiors
                             delivers a complete range of professional painting services
                             designed for clean lines, smooth finishes, and long-lasting
                             durability across every property type.
@@ -215,7 +175,7 @@ export default function Painting() {
                     Ready to Refresh Your Space with a New Coat of Paint?
                 </h2>
                 <p className="text-black mb-6 max-w-2xl mx-auto">
-                    Contact Park Interiorsvt today for a free painting consultation and
+                    Contact Park Interiors today for a free painting consultation and
                     detailed quote. Whether it's a single room, your entire home's exterior,
                     or a full commercial project, our professional painters are ready to
                     deliver clean, beautiful, and long-lasting results.
@@ -224,7 +184,7 @@ export default function Painting() {
 
                 <a href="/contact-us"
                     className="inline-block bg-black text-white px-8 py-3 rounded-full hover:bg-white hover:text-black transition"
-                    aria-label="Get a free painting quote from Park Interiorsvt"
+                    aria-label="Get a free painting quote from Park Interiors"
                 >
                     Get a Quote
                 </a>

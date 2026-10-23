@@ -101,7 +101,7 @@ export default function Navbar() {
         { title: "Milton, VT", slug: "milton-vt" },
         { title: "Richmond, VT", slug: "richmond-vt" },
         { title: "Hinesburg, VT", slug: "hinesburg-vt" },
-        { title: "Colchester, VT", slug: "colchestor-vt" },
+        { title: "Colchester, VT", slug: "colchester-vt" },
         { title: "Fairfax, VT", slug: "fairfax-vt" },
         { title: "Underhill, VT", slug: "underhill-vt" },
         { title: "Jericho, VT", slug: "jericho-vt" },
@@ -125,7 +125,7 @@ export default function Navbar() {
 
                     <a href="tel:+18027770951"
                         className="flex items-center gap-2 hover:text-[#c1a944] transition-colors"
-                        aria-label="Call Park Interiorsvt"
+                        aria-label="Call Park Interiors"
                     >
                         <PhoneCall size={18} className="text-white" aria-hidden="true" />
                         <span>+1-802-777-0951</span>
@@ -134,7 +134,7 @@ export default function Navbar() {
 
                     <a href="mailto:info@parkinteriorsvt.com"
                         className="flex items-center gap-2 hover:text-[#c1a944] transition-colors"
-                        aria-label="Email Park Interiorsvt"
+                        aria-label="Email Park Interiors"
                     >
                         <Mail size={18} className="text-white" aria-hidden="true" />
                         <span>info@parkinteriorsvt.com</span>
@@ -151,7 +151,7 @@ export default function Navbar() {
                         <a href="https://www.facebook.com/profile.php?id=100069736200173"
                             target="_blank"
                             rel="noopener noreferrer"
-                            aria-label="Visit Park Interiorsvt on Facebook"
+                            aria-label="Visit Park Interiors on Facebook"
                             className="w-9 h-9 flex items-center justify-center rounded-full
                        bg-[#c1a944] text-black border border-transparent
                        transition-all duration-300
@@ -165,7 +165,7 @@ export default function Navbar() {
                         <a href="https://www.instagram.com/park_interiorsvt"
                             target="_blank"
                             rel="noopener noreferrer"
-                            aria-label="Visit Park Interiorsvt on Instagram"
+                            aria-label="Visit Park Interiors on Instagram"
                             className="w-9 h-9 flex items-center justify-center rounded-full
                        bg-[#c1a944] text-black border border-transparent
                        transition-all duration-300
@@ -179,7 +179,7 @@ export default function Navbar() {
                         <a href="https://www.youtube.com/@ParkInteriors"
                             target="_blank"
                             rel="noopener noreferrer"
-                            aria-label="Visit Park Interiorsvt on YouTube"
+                            aria-label="Visit Park Interiors on YouTube"
                             className="w-9 h-9 flex items-center justify-center rounded-full
                        bg-[#c1a944] text-black border border-transparent
                        transition-all duration-300

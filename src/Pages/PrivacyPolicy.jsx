@@ -1,6 +1,4 @@
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet-async";
-
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
   show: { opacity: 1, y: 0, transition: { duration: 0.6 } },
@@ -10,37 +8,7 @@ export default function PrivacyPolicy() {
   return (
     <div className="bg-white text-gray-800 min-h-screen">
 
-      {/* SEO Meta Tags */}
-      <Helmet>
-        <title>Privacy Policy | Park Interiors VT - Home Remodeling & Roofing</title>
-        <meta
-          name="description"
-          content="Read the Privacy Policy of Park Interiors VT. Learn how we collect, use, protect, and handle your personal information, including SMS text messaging communications, across our home remodeling, renovation, and roofing services in Vermont."
-        />
-        <meta
-          name="keywords"
-          content="Park Interiors VT privacy policy, Vermont home remodeling privacy, SMS opt-in policy, data protection, personal information, home improvement Vermont, parkinteriorsvt.com"
-        />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://parkinteriorsvt.com/privacy-policy" />
-
-        {/* Open Graph */}
-        <meta property="og:title" content="Privacy Policy | Park Interiors VT" />
-        <meta
-          property="og:description"
-          content="Learn how Park Interiors VT collects, uses, and protects your personal information across our home remodeling, renovation, and roofing services."
-        />
-        <meta property="og:url" content="https://parkinteriorsvt.com/privacy-policy" />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Privacy Policy | Park Interiors VT" />
-        <meta
-          name="twitter:description"
-          content="Read how Park Interiors VT protects your personal information and respects your privacy, including our SMS communications policy."
-        />
-      </Helmet>
+      
 
       {/* Hero Section */}
       <section className="relative py-24 px-6 text-center bg-white border-b border-gray-200">

@@ -15,17 +15,17 @@ export default function Footer() {
     {
       Icon: Facebook,
       href: "https://www.facebook.com/profile.php?id=100069736200173",
-      label: "Visit Park Interiorsvt on Facebook",
+      label: "Visit Park Interiors on Facebook",
     },
     {
       Icon: Instagram,
       href: "https://www.instagram.com/park_interiorsvt",
-      label: "Visit Park Interiorsvt on Instagram",
+      label: "Visit Park Interiors on Instagram",
     },
     {
       Icon: Youtube,
       href: "https://www.youtube.com/@ParkInteriors",
-      label: "Visit Park Interiorsvt on YouTube",
+      label: "Visit Park Interiors on YouTube",
     },
   ];
 
@@ -74,7 +74,7 @@ export default function Footer() {
               { name: "Gallery", slug: "gallery" },
               { name: "Contact", slug: "contact-us" },
               { name: "Privacy Policy", slug: "privacy-policy" },
-              { name: "Terms & Conditions", slug: "term-condation" },
+              { name: "Terms & Conditions", slug: "terms-and-conditions" },
               { name: "FAQ", slug: "faq" }
             ].map((item, i) => (
               <li key={i} className="hover:text-[#c1a944] transition cursor-pointer">
@@ -113,7 +113,7 @@ export default function Footer() {
 
               <a href="tel:+18027770951"
                 className="hover:text-[#c1a944] transition"
-                aria-label="Call Park Interiorsvt"
+                aria-label="Call Park Interiors"
               >
                 +1 (802) 777-0951
               </a>
@@ -124,7 +124,7 @@ export default function Footer() {
 
               <a href="mailto:info@parkinteriorsvt.com"
                 className="hover:text-[#c1a944] transition"
-                aria-label="Email Park Interiorsvt"
+                aria-label="Email Park Interiors"
               >
                 info@parkinteriorsvt.com
               </a>
@@ -137,7 +137,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-[#c1a944] transition"
-                aria-label="View Park Interiorsvt location on Google Maps"
+                aria-label="View Park Interiors location on Google Maps"
               >
                 Underhill, VT 05489
               </a>

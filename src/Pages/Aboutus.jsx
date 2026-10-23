@@ -178,7 +178,7 @@ export default function About() {
                 <div>
                   <p className="text-sm text-gray-500">Our Location</p>
                   <p className="text-gray-900 font-semibold group-hover:text-[#c1a944]">
-                    Vermont, US 05403
+                    Underhill, VT 05489
                   </p>
                 </div>
               </a>

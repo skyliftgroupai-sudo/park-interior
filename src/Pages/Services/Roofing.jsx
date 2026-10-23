@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet-async";
 import heroImg from "../../assets/roofing/img6.jpg";
 import img1 from "../../assets/roofing/img2.jpg";
 import img2 from "../../assets/roofing/img3.webp";
@@ -66,7 +65,7 @@ const structuredData = {
     "serviceType": "Roofing Services",
     "provider": {
         "@type": "RoofingContractor",
-        "name": "Park Interiorsvt",
+        "name": "Park Interiors",
         "url": "https://www.parkinteriorsvt.com",
     },
     "areaServed": {
@@ -92,45 +91,7 @@ export default function Roofing() {
     return (
         <div className="bg-white">
 
-            {/* ===== SEO META TAGS ===== */}
-            <Helmet>
-                <title>Roofing Services | Roof Installation, Repair & Replacement Experts</title>
-                <meta
-                    name="description"
-                    content="Professional roofing services including roof installation, repair, replacement, architectural shingles, and roof coatings. Licensed roofers, free estimates, and long-lasting protection for your home."
-                />
-                <meta
-                    name="keywords"
-                    content="roofing services, roof installation, roof repair, roof replacement, architectural shingles, roof coatings, roofing contractor, asphalt shingles, residential roofing, leak repair, storm damage roofing, new roof"
-                />
-                <meta name="robots" content="index, follow" />
-                <link rel="canonical" href="https://www.parkinteriorsvt.com/roofing" />
-
-                {/* Open Graph */}
-                <meta property="og:type" content="website" />
-                <meta property="og:title" content="Roofing Services | Installation, Repair & Replacement Experts" />
-                <meta
-                    property="og:description"
-                    content="Trusted roofing contractors offering roof installation, repair, replacement, architectural shingles, and roof coatings. Free estimates and quality workmanship guaranteed."
-                />
-                <meta property="og:image" content={heroImg} />
-                <meta property="og:url" content="https://www.parkinteriorsvt.com/roofing" />
-                <meta property="og:site_name" content="Your Company Name" />
-
-                {/* Twitter Card */}
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Roofing Services | Installation, Repair & Replacement Experts" />
-                <meta
-                    name="twitter:description"
-                    content="Trusted roofing contractors offering installation, repair, replacement, and protective coatings. Free estimates available."
-                />
-                <meta name="twitter:image" content={heroImg} />
-
-                {/* JSON-LD structured data */}
-                <script type="application/ld+json">
-                    {JSON.stringify(structuredData)}
-                </script>
-            </Helmet>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
             {/* HERO */}
             <section
