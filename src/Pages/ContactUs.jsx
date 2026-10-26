@@ -51,9 +51,7 @@ const ContactUs = () => {
             "url": "https://www.parkinteriorsvt.com",
             "address": {
                 "@type": "PostalAddress",
-                "addressLocality": "Underhill",
                 "addressRegion": "VT",
-                "postalCode": "05489",
                 "addressCountry": "US"
             },
             "areaServed": {
@@ -241,7 +239,7 @@ const ContactUs = () => {
                                 <div>
                                     <p className="text-sm text-gray-500">Our Location</p>
                                     <p className="text-gray-900 font-semibold group-hover:text-[#c1a944]">
-                                        Underhill, VT 05489
+                                        Serving Chittenden County, VT
                                     </p>
                                 </div>
                             </a>

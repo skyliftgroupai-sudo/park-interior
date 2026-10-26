@@ -139,7 +139,7 @@ export default function Footer() {
                 className="hover:text-[#c1a944] transition"
                 aria-label="View Park Interiors location on Google Maps"
               >
-                Underhill, VT 05489
+                Serving Chittenden County, VT
               </a>
             </li>
 

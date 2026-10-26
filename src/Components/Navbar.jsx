@@ -119,7 +119,7 @@ export default function Navbar() {
                 <div className="flex items-center gap-6 text-white">
                     <div className="flex items-center gap-2">
                         <MapPin size={18} className="text-white" aria-hidden="true" />
-                        <span>Underhill, VT 05489</span>
+                        <span>Serving Chittenden County, VT</span>
                     </div>
 
 
