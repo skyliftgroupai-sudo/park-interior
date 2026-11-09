@@ -48,7 +48,7 @@ export default function FAQPage() {
       <section className="py-24 px-6 text-center border-b border-gray-200">
         <motion.h1
           variants={fadeUp}
-          initial="hidden"
+          initial={false}
           animate="show"
           className="text-4xl md:text-5xl font-bold mb-4 text-black"
         >
@@ -56,7 +56,7 @@ export default function FAQPage() {
         </motion.h1>
         <motion.p
           variants={fadeUp}
-          initial="hidden"
+          initial={false}
           animate="show"
           transition={{ delay: 0.2 }}
           className="text-gray-700 text-lg max-w-2xl mx-auto"

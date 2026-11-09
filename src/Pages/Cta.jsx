@@ -1,6 +1,6 @@
 import { ArrowRight, PhoneCall } from "lucide-react";
 import { Link } from "react-router-dom";
-import ctaBg from "../assets/hero/hero3.jpg";
+import ctaBg from "../assets/hero/hero3.webp";
 
 export default function CTASection() {
     return (

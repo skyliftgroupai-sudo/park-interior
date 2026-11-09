@@ -95,7 +95,7 @@ const ContactUs = () => {
                 <div className="relative z-10 max-w-3xl mx-auto">
                     <motion.h1
                         variants={fadeUp}
-                        initial="hidden"
+                        initial={false}
                         animate="show"
                         className="text-4xl md:text-6xl font-bold mb-4"
                     >
@@ -104,7 +104,7 @@ const ContactUs = () => {
 
                     <motion.p
                         variants={fadeUp}
-                        initial="hidden"
+                        initial={false}
                         animate="show"
                         transition={{ delay: 0.2 }}
                         className="text-gray-300 text-lg"

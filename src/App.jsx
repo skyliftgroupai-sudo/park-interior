@@ -27,6 +27,8 @@ import Shelburne from "./Pages/Services/Shelburne";
 import Blog from "./Pages/Blog";
 import BlogDetail from "./Pages/BlogDetail";
 import NotFound from "./Pages/NotFound";
+import ServicePage from "./Components/ServicePage";
+import { coreServiceSlugs } from "./data/servicePages";
 
 
 function App() {
@@ -45,6 +47,9 @@ function App() {
           <Route path="home-renovations" element={<HomeRenovation />} />
           <Route path="home-remodeling" element={<HomeRemodeling />} />
           <Route path="home-addition" element={<HomeAddition />} />
+          {coreServiceSlugs.map((slug) => (
+            <Route key={slug} path={slug} element={<ServicePage slug={slug} />} />
+          ))}
           <Route path="roofing" element={<Roofing />} />
           <Route path="siding" element={<Siding />} />
           <Route path="painting" element={<Painting />} />

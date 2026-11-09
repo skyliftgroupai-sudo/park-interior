@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import img1 from "../../assets/remodeling/bathroom.jpg";
-import img4 from "../../assets/roofing/img2.jpg";
+import img1 from "../../assets/remodeling/bathroom.webp";
+import img4 from "../../assets/roofing/img2.webp";
 
 const heroImg = "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1600&q=80";
 const img2 = "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80";
@@ -64,16 +64,16 @@ export default function Fairfax() {
                 <div className="relative z-10 max-w-3xl mx-auto">
                     <motion.h1
                         variants={fadeUp}
-                        initial="hidden"
+                        initial={false}
                         animate="show"
                         className="text-4xl md:text-5xl font-bold mb-6 text-white"
                     >
-                        Trusted Home Remodeling & Roofing Contractors in Fairfax, VT
+                        Trusted Home Additions & Remodeling Contractors in Fairfax, VT
                     </motion.h1>
 
                     <motion.p
                         variants={fadeUp}
-                        initial="hidden"
+                        initial={false}
                         animate="show"
                         transition={{ delay: 0.2 }}
                         className="text-white text-lg mb-8"
@@ -84,7 +84,7 @@ export default function Fairfax() {
                     <motion.a
                         href="/contact-us"
                         variants={fadeUp}
-                        initial="hidden"
+                        initial={false}
                         animate="show"
                         transition={{ delay: 0.4 }}
                         className="inline-block bg-[#c1a944] text-black px-8 py-3 rounded-xl font-semibold hover:opacity-90"

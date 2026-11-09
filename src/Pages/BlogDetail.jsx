@@ -99,6 +99,35 @@ export default function BlogDetail() {
 
     return (
         <div className="bg-white text-gray-900">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify([
+                        {
+                            "@context": "https://schema.org",
+                            "@type": "BlogPosting",
+                            headline: blog.title,
+                            description: blog.seo?.metaDescription || blog.excerpt,
+                            datePublished: blog.isoDate || undefined,
+                            dateModified: blog.isoUpdated || blog.isoDate || undefined,
+                            author: { "@type": "Organization", name: "Park Interiors", url: "https://www.parkinteriorsvt.com" },
+                            publisher: { "@type": "Organization", name: "Park Interiors", url: "https://www.parkinteriorsvt.com" },
+                            mainEntityOfPage: `https://www.parkinteriorsvt.com/blog/${blog.slug}`,
+                        },
+                        ...(blog.faqs && blog.faqs.length
+                            ? [{
+                                "@context": "https://schema.org",
+                                "@type": "FAQPage",
+                                mainEntity: blog.faqs.map((f) => ({
+                                    "@type": "Question",
+                                    name: f.question,
+                                    acceptedAnswer: { "@type": "Answer", text: f.answer },
+                                })),
+                            }]
+                            : []),
+                    ]),
+                }}
+            />
 
             
 
@@ -120,7 +149,7 @@ export default function BlogDetail() {
 
                     <motion.h1
                         variants={fadeUp}
-                        initial="hidden"
+                        initial={false}
                         animate="show"
                         className="text-3xl md:text-4xl font-bold mb-6 text-white"
                     >
@@ -166,6 +195,40 @@ export default function BlogDetail() {
                                 >
                                     {block.text}
                                 </h3>
+                            );
+                        }
+                        if (block.type === "ul") {
+                            return (
+                                <ul key={i} className="list-disc pl-6 space-y-2 text-gray-700 leading-relaxed mb-6">
+                                    {block.items.map((item, j) => (
+                                        <li key={j}>{renderText(item, block.links)}</li>
+                                    ))}
+                                </ul>
+                            );
+                        }
+                        if (block.type === "table") {
+                            return (
+                                <div key={i} className="overflow-x-auto my-8">
+                                    <table className="w-full text-left border border-gray-200 text-sm md:text-base">
+                                        <thead className="bg-gray-100">
+                                            <tr>
+                                                {block.head.map((h) => (
+                                                    <th key={h} className="p-3 font-semibold border-b border-gray-200">{h}</th>
+                                                ))}
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            {block.rows.map((row, r) => (
+                                                <tr key={r} className="border-b border-gray-100">
+                                                    {row.map((cell, c) => (
+                                                        <td key={c} className="p-3 align-top">{cell}</td>
+                                                    ))}
+                                                </tr>
+                                            ))}
+                                        </tbody>
+                                    </table>
+                                    {block.caption && <p className="text-sm text-gray-500 mt-2">{block.caption}</p>}
+                                </div>
                             );
                         }
                         if (block.type === "img") {

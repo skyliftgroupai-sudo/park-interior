@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import heroImg from "../../assets/painting/image1.jpg";
+import heroImg from "../../assets/painting/image1.webp";
 import img1 from "../../assets/painting/image3.webp";
 import img2 from "../../assets/painting/image2.webp";
 import img3 from "../../assets/painting/image4.jpg";
@@ -90,7 +90,7 @@ export default function Painting() {
                 <div className="relative z-10 max-w-3xl mx-auto">
                     <motion.h1
                         variants={fadeUp}
-                        initial="hidden"
+                        initial={false}
                         animate="show"
                         className="text-4xl md:text-5xl font-bold mb-4"
                     >
@@ -98,7 +98,7 @@ export default function Painting() {
                     </motion.h1>
                     <motion.p
                         variants={fadeUp}
-                        initial="hidden"
+                        initial={false}
                         animate="show"
                         transition={{ delay: 0.2 }}
                         className="text-gray-300 text-lg"

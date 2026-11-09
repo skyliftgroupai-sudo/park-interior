@@ -7,9 +7,9 @@ import {
   Percent,
   PhoneCall,
 } from "lucide-react";
-import hero1 from "../assets/hero/hero1.jpg";
-import hero2 from "../assets/hero/hero2.jpg";
-import hero3 from "../assets/hero/hero3.jpg"; // replace gif with image for performance
+import hero1 from "../assets/hero/hero1.webp";
+import hero2 from "../assets/hero/hero2.webp";
+import hero3 from "../assets/hero/hero3.webp"; // replace gif with image for performance
 import { Link } from "react-router-dom";
 
 const features = [
@@ -48,18 +48,23 @@ export default function Hero() {
   }, []);
 
   return (
-<section className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background Slider */}
+<section className="relative isolate min-h-screen flex items-center overflow-hidden">
+      {/* Background Slider: real <img> so the first slide is the LCP element and loads first */}
       <div className="absolute inset-0 -z-10">
         {images.map((img, index) => (
-          <div
+          <img
             key={index}
-            className={`absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat transition-all duration-[3000ms] ${
-              index === current
-                ? "opacity-100 scale-100"
-                : "opacity-0 scale-110"
+            src={img}
+            alt=""
+            aria-hidden="true"
+            width="1600"
+            height="1067"
+            loading={index === 0 ? "eager" : "lazy"}
+            fetchPriority={index === 0 ? "high" : "low"}
+            decoding={index === 0 ? "sync" : "async"}
+            className={`absolute inset-0 w-full h-full object-cover transition-all duration-[3000ms] ${
+              index === current ? "opacity-100 scale-100" : "opacity-0 scale-110"
             }`}
-            style={{ backgroundImage: `url(${img})` }}
           />
         ))}
       </div>
@@ -71,12 +76,14 @@ export default function Hero() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 py-20 sm:py-24 text-white">
         <div className="max-w-4xl">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-            Transform Your Home Into Something Beautiful
+            General Contractor in Chittenden County, VT: Additions, Kitchens, Baths &amp; Basements
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl text-gray-200 mb-8">
-            Expert home remodeling services designed to upgrade your space with
-            quality craftsmanship, modern design, and lasting value.
+            Park Interiors builds home additions, finishes basements, remodels kitchens
+            and bathrooms, and handles framing, drywall and flooring across Burlington,
+            Essex, Jericho, Underhill and Chittenden County. Licensed and insured, with
+            17 five-star Google reviews.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">

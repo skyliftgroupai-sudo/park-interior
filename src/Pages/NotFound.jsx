@@ -19,7 +19,7 @@ export default function NotFound() {
             <section className="relative flex min-h-[70vh] items-center justify-center px-6 py-24 text-center">
                 <motion.div
                     variants={fadeUp}
-                    initial="hidden"
+                    initial={false}
                     animate="show"
                     className="max-w-xl mx-auto"
                 >

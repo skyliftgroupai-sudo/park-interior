@@ -1,20 +1,22 @@
 // Blog content data — sourced from provided documents.
 // Each post keeps its original heading structure and body text.
 
-import blog1Hero from "../../assets/blog/blog1hero.png";
-import blog1Img from "../../assets/blog/blog1.png";
-import blog2Hero from "../../assets/blog/blog2hero.png";
-import blog2Img from "../../assets/blog/blog2img.png";
-import blog3Hero from "../../assets/blog/blog3hero.png";
-import blog3Img from "../../assets/blog/blog3.png";
-import blog4Hero from "../../assets/blog/blog4hero.png";
-import blog4Img from "../../assets/blog/blog4.png";
-import blog5Hero from "../../assets/blog/blog-hero5.jpg";
-import blog5Img from "../../assets/blog/blog5.jpg";
-import blog6Hero from "../../assets/blog/blog-hero6.jpg";
-import blog6Img from "../../assets/blog/blog6.jpg";
+import blog1Hero from "../../assets/blog/blog1hero.webp";
+import blog1Img from "../../assets/blog/blog1.webp";
+import blog2Hero from "../../assets/blog/blog2hero.webp";
+import blog2Img from "../../assets/blog/blog2img.webp";
+import blog3Hero from "../../assets/blog/blog3hero.webp";
+import blog3Img from "../../assets/blog/blog3.webp";
+import blog4Hero from "../../assets/blog/blog4hero.webp";
+import blog4Img from "../../assets/blog/blog4.webp";
+import blog5Hero from "../../assets/blog/blog-hero5.webp";
+import blog5Img from "../../assets/blog/blog5.webp";
+import blog6Hero from "../../assets/blog/blog-hero6.webp";
+import blog6Img from "../../assets/blog/blog6.webp";
+import costGuides from "./costGuides";
 
 const blogs = [
+    ...costGuides,
     {
         slug: "quality-home-remodeling-in-jericho",
         title: "Quality Home Remodeling in Jericho: Essential Renovation Projects for Modern Living",

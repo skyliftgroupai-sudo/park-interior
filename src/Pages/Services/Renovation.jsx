@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import heroImg from "../../assets/hero/hero3.jpg";
+import heroImg from "../../assets/hero/hero3.webp";
 import img1 from "../../assets/work/work1.jpg";
-import img2 from "../../assets/work/work2.jpg";
-import img3 from "../../assets/work/work3.jpg";
+import img2 from "../../assets/work/work2.webp";
+import img3 from "../../assets/work/work3.webp";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -79,7 +79,7 @@ export default function HomeRenovation() {
         <div className="relative z-10 max-w-3xl mx-auto">
           <motion.h1
             variants={fadeUp}
-            initial="hidden"
+            initial={false}
             animate="show"
             className="text-4xl md:text-6xl font-bold mb-4"
           >
@@ -88,7 +88,7 @@ export default function HomeRenovation() {
 
           <motion.p
             variants={fadeUp}
-            initial="hidden"
+            initial={false}
             animate="show"
             transition={{ delay: 0.2 }}
             className="text-gray-300 text-lg"
@@ -211,6 +211,12 @@ export default function HomeRenovation() {
         <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
           Ready to Start Your Home Renovation?
         </h2>
+        <p className="text-black mb-6">
+          Looking for a specific trade? See our{" "}
+          <a href="/framing" className="underline font-semibold">wood &amp; metal framing</a>,{" "}
+          <a href="/drywall" className="underline font-semibold">drywall</a> and{" "}
+          <a href="/flooring" className="underline font-semibold">flooring</a> pages.
+        </p>
         <p className="text-black mb-6">
           Contact our renovation experts today for a free consultation and personalized quote on your next home remodeling project.
         </p>

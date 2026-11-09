@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
-import heroImg from "../../assets/painting/image1.jpg";
-import img1 from "../../assets/remodeling/bathroom.jpg";
+import heroImg from "../../assets/painting/image1.webp";
+import img1 from "../../assets/remodeling/bathroom.webp";
 import img2 from "../../assets/painting/image2.webp";
 import img3 from "../../assets/painting/image4.jpg";
-import img4 from "../../assets/roofing/img2.jpg";
+import img4 from "../../assets/roofing/img2.webp";
 
 const fadeUp = {
     hidden: { opacity: 0, y: 40 },
@@ -63,16 +63,16 @@ export default function SouthBurlington() {
                 <div className="relative z-10 max-w-3xl mx-auto">
                     <motion.h1
                         variants={fadeUp}
-                        initial="hidden"
+                        initial={false}
                         animate="show"
                         className="text-4xl md:text-5xl font-bold mb-6"
                     >
-                        Home Remodeling & Roofing in South Burlington, VT
+                        Home Additions & Remodeling in South Burlington, VT
                     </motion.h1>
 
                     <motion.p
                         variants={fadeUp}
-                        initial="hidden"
+                        initial={false}
                         animate="show"
                         transition={{ delay: 0.2 }}
                         className="text-white text-lg mb-8"
@@ -85,7 +85,7 @@ export default function SouthBurlington() {
                     <motion.a
                         href="/contact-us"
                         variants={fadeUp}
-                        initial="hidden"
+                        initial={false}
                         animate="show"
                         transition={{ delay: 0.4 }}
                         className="inline-block bg-[#c1a944] text-black px-8 py-3 rounded-xl font-semibold hover:opacity-90"

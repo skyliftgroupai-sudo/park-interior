@@ -1,5 +1,5 @@
 import Heroimg from '../assets/hero/hero.jpg';
-import Logo from "../assets/park-interior.png"
+import Logo from "../assets/park-interior.webp"
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -41,7 +41,7 @@ export default function AboutSection() {
           </h3>
 
           <p className="text-gray-600 mb-6">
-            As a locally owned company, we take pride in delivering honest service, clear communication, and results that exceed expectations. Your home deserves nothing but the best—and that’s exactly what we deliver.
+            As a local Vermont contractor, we take pride in delivering honest service, clear communication, and results that exceed expectations. Your home deserves nothing but the best—and that’s exactly what we deliver.
           </p>
 
           <Link to="/about-us">

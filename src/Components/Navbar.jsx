@@ -6,7 +6,7 @@ import {
     Youtube
 } from "lucide-react";
 import { NavLink } from "react-router-dom";
-import Logo from "../assets/park-interior.png";
+import Logo from "../assets/park-interior.webp";
 import QuotePopup from "./QuotePopup";
 
 
@@ -38,61 +38,24 @@ export default function Navbar() {
 
     const services = [
         {
-            title: "Home Renovation",
-            slug: "home-renovations",
-            subServices: [
-                { title: "Full Home Renovation", id: "full-home-renovation" },
-                { title: "Interior Renovation", id: "interior-renovation" },
-                { title: "Exterior Renovation", id: "exterior-renovation" },
-            ],
-        },
-        {
-            title: "Home Remodeling",
-            slug: "home-remodeling",
-            subServices: [
-                { title: "Kitchen Remodeling", id: "kitchen-remodeling" },
-                { title: "Bathroom Remodeling", id: "bathroom-remodeling" },
-                { title: "Basement Remodeling", id: "basement-remodeling" },
-            ],
-        },
-        {
             title: "Home Additions",
             slug: "home-addition",
             subServices: [
                 { title: "Room Additions", id: "room-addition" },
-                { title: "Second Floor Additions", id: "second-floor" },
+                { title: "Second Floor Additions", id: "second-floor-addition" },
                 { title: "Garage Additions", id: "garage-addition" },
             ],
         },
-        {
-            title: "Roofing",
-            slug: "roofing",
-            subServices: [
-                { title: "Roof Installation", id: "roof-installation" },
-                { title: "Roof Repair", id: "roof-repair" },
-                { title: "Roof Replacement", id: "roof-replacement" },
-                { title: "Architectural Shingles", id: "architectural-shingles" },
-                { title: "Roof Coatings", id: "roof-coating" },
-            ],
-        },
-        {
-            title: "Siding",
-            slug: "siding",
-            subServices: [
-                { title: "Siding Installation", id: "siding-installation" },
-                { title: "Siding Repair", id: "siding-repair" },
-                { title: "Vinyl Siding", id: "vinyl-siding" },
-            ],
-        },
-        {
-            title: "Painting",
-            slug: "painting",
-            subServices: [
-                { title: "Interior Painting", id: "interior-painting" },
-                { title: "Exterior Painting", id: "exterior-painting" },
-                { title: "Commercial Painting", id: "commercial-painting" },
-            ],
-        },
+        { title: "Kitchen Remodeling", slug: "kitchen-remodeling" },
+        { title: "Bathroom Remodeling", slug: "bathroom-remodeling" },
+        { title: "Basement Finishing", slug: "basement-finishing" },
+        { title: "Wood & Metal Framing", slug: "framing" },
+        { title: "Drywall", slug: "drywall" },
+        { title: "Flooring", slug: "flooring" },
+        { title: "Painting", slug: "painting" },
+        { title: "Home Renovation", slug: "home-renovations" },
+        { title: "Roofing", slug: "roofing" },
+        { title: "Siding", slug: "siding" },
     ];
 
     const area = [
@@ -388,11 +351,11 @@ export default function Navbar() {
                                 {[
                                     { name: "Home", path: "/" },
                                     { name: "About", path: "/about-us" },
-                                    { name: "Home Renovation", path: "/home-renovations" },
-                                    { name: "Home Remodeling", path: "/home-remodeling" },
                                     { name: "Home Additions", path: "/home-addition" },
-                                    { name: "Roofing", path: "/roofing" },
-                                    { name: "Siding", path: "/siding" },
+                                    { name: "Kitchen Remodeling", path: "/kitchen-remodeling" },
+                                    { name: "Bathroom Remodeling", path: "/bathroom-remodeling" },
+                                    { name: "Basement Finishing", path: "/basement-finishing" },
+                                    { name: "Framing, Drywall & Flooring", path: "/home-renovations" },
                                     { name: "Painting", path: "/painting" },
                                     { name: "Gallery", path: "/gallery" },
                                     { name: "Blog", path: "/blog" },

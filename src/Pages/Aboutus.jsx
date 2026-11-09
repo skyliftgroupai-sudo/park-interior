@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Phone, Mail, MapPin, PhoneCall } from "lucide-react";
-import aboutImg from "../assets/hero/hero3.jpg";
+import aboutImg from "../assets/hero/hero3.webp";
 import AboutSection from "./AboutSection";
 import CTASection from "./Cta";
 
@@ -31,7 +31,7 @@ export default function About() {
         <div className="relative z-10 max-w-3xl mx-auto">
           <motion.h1
             variants={fadeUp}
-            initial="hidden"
+            initial={false}
             animate="show"
             className="text-4xl md:text-6xl font-bold mb-4"
           >
@@ -40,7 +40,7 @@ export default function About() {
 
           <motion.p
             variants={fadeUp}
-            initial="hidden"
+            initial={false}
             animate="show"
             transition={{ delay: 0.2 }}
             className="text-gray-300 text-lg"

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import img1 from "../../assets/remodeling/kitchen.jpg";
+import img1 from "../../assets/remodeling/kitchen.webp";
 
 const heroImg = "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1600&q=80";
 // const img1 = "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80";
@@ -65,16 +65,16 @@ export default function Underhill() {
                 <div className="relative z-10 max-w-3xl mx-auto">
                     <motion.h1
                         variants={fadeUp}
-                        initial="hidden"
+                        initial={false}
                         animate="show"
                         className="text-4xl md:text-5xl font-bold mb-6 text-white"
                     >
-                        Premier Home Remodeling & Roofing in Underhill, VT
+                        Premier Home Additions & Remodeling in Underhill, VT
                     </motion.h1>
 
                     <motion.p
                         variants={fadeUp}
-                        initial="hidden"
+                        initial={false}
                         animate="show"
                         transition={{ delay: 0.2 }}
                         className="text-white text-lg mb-8"
@@ -85,7 +85,7 @@ export default function Underhill() {
                     <motion.a
                         href="/contact-us"
                         variants={fadeUp}
-                        initial="hidden"
+                        initial={false}
                         animate="show"
                         transition={{ delay: 0.4 }}
                         className="inline-block bg-[#c1a944] text-black px-8 py-3 rounded-xl font-semibold hover:opacity-90"

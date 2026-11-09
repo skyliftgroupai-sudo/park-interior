@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import heroImg from "../../assets/roofing/img6.jpg";
-import img1 from "../../assets/roofing/img2.jpg";
+import img1 from "../../assets/roofing/img2.webp";
 import img2 from "../../assets/roofing/img3.webp";
-import img3 from "../../assets/roofing/img4.jpg";
-import img4 from "../../assets/roofing/img5.jpeg";
+import img3 from "../../assets/roofing/img4.webp";
+import img4 from "../../assets/roofing/img5.webp";
 import img5 from "../../assets/roofing/img1.webp";
 
 const fadeUp = {
@@ -108,7 +108,7 @@ export default function Roofing() {
                 <div className="relative z-10 max-w-3xl mx-auto">
                     <motion.h1
                         variants={fadeUp}
-                        initial="hidden"
+                        initial={false}
                         animate="show"
                         className="text-4xl md:text-5xl font-bold mb-4"
                     >
@@ -117,7 +117,7 @@ export default function Roofing() {
 
                     <motion.p
                         variants={fadeUp}
-                        initial="hidden"
+                        initial={false}
                         animate="show"
                         transition={{ delay: 0.2 }}
                         className="text-gray-300 text-lg"

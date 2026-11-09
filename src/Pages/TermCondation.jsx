@@ -21,7 +21,7 @@ export default function TermsAndConditions() {
       <section className="relative py-24 px-6 text-center bg-white border-b border-gray-200">
         <motion.h1
           variants={fadeUp}
-          initial="hidden"
+          initial={false}
           animate="show"
           className="text-4xl md:text-5xl font-bold mb-4 text-black"
         >
@@ -29,7 +29,7 @@ export default function TermsAndConditions() {
         </motion.h1>
         <motion.p
           variants={fadeUp}
-          initial="hidden"
+          initial={false}
           animate="show"
           transition={{ delay: 0.2 }}
           className="text-gray-700 text-lg max-w-2xl mx-auto"
@@ -38,7 +38,7 @@ export default function TermsAndConditions() {
         </motion.p>
         <motion.p
           variants={fadeUp}
-          initial="hidden"
+          initial={false}
           animate="show"
           transition={{ delay: 0.3 }}
           className="text-gray-500 text-sm mt-4"

@@ -8,22 +8,22 @@
   "redirects": [
     {
       "source": "/kitchen-renovation-and-remodeling/:city",
-      "destination": "/home-remodeling",
+      "destination": "/kitchen-remodeling",
       "permanent": true
     },
     {
       "source": "/kitchen-remodeling-services/:city",
-      "destination": "/home-remodeling",
+      "destination": "/kitchen-remodeling",
       "permanent": true
     },
     {
       "source": "/bathroom-renovation-and-remodeling/:city",
-      "destination": "/home-remodeling",
+      "destination": "/bathroom-remodeling",
       "permanent": true
     },
     {
       "source": "/bathroom-renovation-contractors/:city",
-      "destination": "/home-remodeling",
+      "destination": "/bathroom-remodeling",
       "permanent": true
     },
     {
@@ -53,27 +53,27 @@
     },
     {
       "source": "/drywall-installation---repair/:city",
-      "destination": "/home-renovations",
+      "destination": "/drywall",
       "permanent": true
     },
     {
       "source": "/drywall-installation-and-repair/:city",
-      "destination": "/home-renovations",
+      "destination": "/drywall",
       "permanent": true
     },
     {
       "source": "/drywall-repair-services/:city",
-      "destination": "/home-renovations",
+      "destination": "/drywall",
       "permanent": true
     },
     {
       "source": "/flooring-installation/:city",
-      "destination": "/home-renovations",
+      "destination": "/flooring",
       "permanent": true
     },
     {
       "source": "/flooring-installation-lvp-hardwood-tile/:city",
-      "destination": "/home-renovations",
+      "destination": "/flooring",
       "permanent": true
     },
     {
@@ -153,17 +153,47 @@
     },
     {
       "source": "/metal-framing",
-      "destination": "/home-renovations",
+      "destination": "/framing",
       "permanent": true
     },
     {
       "source": "/wood-framing",
-      "destination": "/home-renovations",
+      "destination": "/framing",
       "permanent": true
     },
     {
       "source": "/drywall-and-painting",
-      "destination": "/home-renovations",
+      "destination": "/drywall",
+      "permanent": true
+    },
+    {
+      "source": "/basement-finishing/:city",
+      "destination": "/basement-finishing",
+      "permanent": true
+    },
+    {
+      "source": "/basement-remodeling/:city",
+      "destination": "/basement-finishing",
+      "permanent": true
+    },
+    {
+      "source": "/basement-remodeling",
+      "destination": "/basement-finishing",
+      "permanent": true
+    },
+    {
+      "source": "/kitchen-remodeling/:city",
+      "destination": "/kitchen-remodeling",
+      "permanent": true
+    },
+    {
+      "source": "/bathroom-remodeling/:city",
+      "destination": "/bathroom-remodeling",
+      "permanent": true
+    },
+    {
+      "source": "/home-additions",
+      "destination": "/home-addition",
       "permanent": true
     },
     {

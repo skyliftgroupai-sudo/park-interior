@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import heroImg from "../../assets/hero/hero3.jpg";
-import img1 from "../../assets/remodeling/kitchen.jpg";
-import img2 from "../../assets/remodeling/bathroom.jpg";
+import heroImg from "../../assets/hero/hero3.webp";
+import img1 from "../../assets/remodeling/kitchen.webp";
+import img2 from "../../assets/remodeling/bathroom.webp";
 import img3 from "../../assets/remodeling/basement.jpg";
 
 const fadeUp = {
@@ -16,6 +16,7 @@ const fadeUp = {
 const services = [
     {
         id: "kitchen-remodeling",
+        link: "/kitchen-remodeling",
         title: "Kitchen Remodeling Services",
         description:
             "Upgrade your kitchen with a complete remodeling service designed to deliver modern style, smart storage, and lasting durability. Our expert team handles custom cabinetry, quartz and granite countertops, tile backsplashes, energy-efficient lighting, and full layout redesigns. Whether you're planning a small kitchen update or a full-scale renovation, we build kitchens that are beautiful, highly functional, and engineered to add real value to your home.",
@@ -24,6 +25,7 @@ const services = [
     },
     {
         id: "bathroom-remodeling",
+        link: "/bathroom-remodeling",
         title: "Bathroom Remodeling Services",
         description:
             "Transform your bathroom into a stylish, spa-inspired retreat with our complete bathroom remodeling services. We specialize in walk-in showers, custom vanities, premium tile work, modern plumbing fixtures, and energy-efficient lighting. From small powder room updates to full master bathroom renovations, our skilled craftsmen deliver a clean, comfortable, and high-performance space designed to elevate your daily routine and increase your home's resale value.",
@@ -32,6 +34,7 @@ const services = [
     },
     {
         id: "basement-remodeling",
+        link: "/basement-finishing",
         title: "Basement Remodeling Services",
         description:
             "Unlock the full potential of your home with professional basement remodeling services that turn unused square footage into a beautiful, livable space. We design and build finished basements including home offices, media rooms, guest suites, in-law apartments, and rental units. Our team manages framing, waterproofing, insulation, electrical, flooring, and finishing — delivering a warm, code-compliant, and high-value addition to your home.",
@@ -90,7 +93,7 @@ export default function HomeRemodeling() {
                 <div className="relative z-10 max-w-3xl mx-auto">
                     <motion.h1
                         variants={fadeUp}
-                        initial="hidden"
+                        initial={false}
                         animate="show"
                         className="text-4xl md:text-5xl font-bold mb-4"
                     >
@@ -99,7 +102,7 @@ export default function HomeRemodeling() {
 
                     <motion.p
                         variants={fadeUp}
-                        initial="hidden"
+                        initial={false}
                         animate="show"
                         transition={{ delay: 0.2 }}
                         className="text-gray-300 text-lg"
@@ -159,6 +162,9 @@ export default function HomeRemodeling() {
                                         <p className="text-gray-600">
                                             {service.description}
                                         </p>
+                                        <a href={service.link} className="inline-block mt-4 font-semibold text-[#a08a2c] underline">
+                                            Learn more about {service.title.replace(" Services", "").toLowerCase()} &rarr;
+                                        </a>
                                     </div>
                                 </article>
                             );

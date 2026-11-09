@@ -41,8 +41,9 @@ export default function Footer() {
             Park Interiors
           </h2>
           <p className="text-md font-semibold text-gray-600 leading-relaxed mb-5">
-            We deliver high-quality roofing, siding, and remodeling services
-            with a focus on durability, design, and customer satisfaction.
+            Licensed and insured general contractor in Chittenden County, VT:
+            home additions, basement finishing, kitchen and bathroom remodels,
+            framing, drywall and flooring.
           </p>
 
           {/* Social Icons */}
@@ -89,12 +90,14 @@ export default function Footer() {
           <h3 className="text-gray-900 font-semibold mb-5">Services</h3>
           <ul className="space-y-3 text-md font-semibold">
             {[
-              { name: "Roofing", slug: "roofing" },
-              { name: "Siding", slug: "siding" },
-              { name: "Remodeling", slug: "home-remodeling" },
-              { name: "Painting", slug: "painting" },
-              { name: "Renovation", slug: "home-renovations" },
-              { name: "Addition", slug: "home-addition" }
+              { name: "Home Additions", slug: "home-addition" },
+              { name: "Kitchen Remodeling", slug: "kitchen-remodeling" },
+              { name: "Bathroom Remodeling", slug: "bathroom-remodeling" },
+              { name: "Basement Finishing", slug: "basement-finishing" },
+              { name: "Framing", slug: "framing" },
+              { name: "Drywall", slug: "drywall" },
+              { name: "Flooring", slug: "flooring" },
+              { name: "Painting", slug: "painting" }
             ].map((service, i) => (
               <li key={i} className="hover:text-[#c1a944] transition cursor-pointer">
                 <Link to={`/${service.slug}`}>{service.name}</Link>

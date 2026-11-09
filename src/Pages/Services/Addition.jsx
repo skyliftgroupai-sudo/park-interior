@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import heroImg from "../../assets/hero/hero3.jpg";
-import img1 from "../../assets/addition/garge.jpg";
+import heroImg from "../../assets/hero/hero3.webp";
+import img1 from "../../assets/addition/garge.webp";
 import imge2 from "../../assets/addition/room.avif";
 import img3 from "../../assets/remodeling/basement.jpg";
 
@@ -90,7 +90,7 @@ export default function HomeAddition() {
                 <div className="relative z-10 max-w-3xl mx-auto">
                     <motion.h1
                         variants={fadeUp}
-                        initial="hidden"
+                        initial={false}
                         animate="show"
                         className="text-4xl md:text-5xl font-bold mb-4"
                     >
@@ -99,7 +99,7 @@ export default function HomeAddition() {
 
                     <motion.p
                         variants={fadeUp}
-                        initial="hidden"
+                        initial={false}
                         animate="show"
                         transition={{ delay: 0.2 }}
                         className="text-gray-300 text-lg"

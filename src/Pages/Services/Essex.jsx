@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import img1 from "../../assets/remodeling/kitchen.jpg";
+import img1 from "../../assets/remodeling/kitchen.webp";
 
 
 const heroImg = "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1600&q=80";
@@ -66,16 +66,16 @@ export default function Essex() {
                 <div className="relative z-10 max-w-3xl mx-auto">
                     <motion.h1
                         variants={fadeUp}
-                        initial="hidden"
+                        initial={false}
                         animate="show"
                         className="text-4xl md:text-5xl font-bold mb-6 text-white"
                     >
-                        Top-Rated Home Remodeling & Roofing in Essex, VT
+                        Top-Rated Home Additions & Remodeling in Essex, VT
                     </motion.h1>
 
                     <motion.p
                         variants={fadeUp}
-                        initial="hidden"
+                        initial={false}
                         animate="show"
                         transition={{ delay: 0.2 }}
                         className="text-white text-lg mb-8"
@@ -86,7 +86,7 @@ export default function Essex() {
                     <motion.a
                         href="/contact-us"
                         variants={fadeUp}
-                        initial="hidden"
+                        initial={false}
                         animate="show"
                         transition={{ delay: 0.4 }}
                         className="inline-block bg-[#c1a944] text-black px-8 py-3 rounded-xl font-semibold hover:opacity-90"
