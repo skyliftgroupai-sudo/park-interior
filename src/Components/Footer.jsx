@@ -6,6 +6,7 @@ import {
   Mail,
   MapPin,
 } from "lucide-react";
+import { AREAS } from "../data/areas";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
@@ -148,6 +149,18 @@ export default function Footer() {
 
           </ul>
         </div>
+      </div>
+
+      {/* Service Areas */}
+      <div className="max-w-6xl mx-auto px-6 pb-10">
+        <h3 className="text-gray-900 font-semibold mb-4">Service Areas</h3>
+        <ul className="flex flex-wrap gap-x-6 gap-y-2 text-md font-semibold">
+          {AREAS.map((a) => (
+            <li key={a.slug} className="hover:text-[#c1a944] transition">
+              <Link to={`/${a.slug}`}>{a.name}, VT</Link>
+            </li>
+          ))}
+        </ul>
       </div>
 
       {/* Bottom Bar */}

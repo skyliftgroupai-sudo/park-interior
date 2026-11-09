@@ -329,6 +329,23 @@ export default function Navbar() {
                             {mobileMenu ? <X size={28} /> : <Menu size={28} />}
                         </button>
                     </div>
+
+                            {/* Service Areas (mobile) */}
+                            <div className="mt-8 pt-6 border-t border-gray-200">
+                                <p className="text-sm font-semibold uppercase tracking-wide text-gray-500 mb-3">Service Areas</p>
+                                <div className="grid grid-cols-2 gap-x-4 gap-y-3 text-base">
+                                    {area.map((a) => (
+                                        <NavLink
+                                            key={a.slug}
+                                            to={`/${a.slug}`}
+                                            className={({ isActive }) => (isActive ? "text-[#c1a944]" : "hover:text-[#c1a944] transition")}
+                                            onClick={() => setMobileMenu(false)}
+                                        >
+                                            {a.title}
+                                        </NavLink>
+                                    ))}
+                                </div>
+                            </div>
                 </div>
 
                 {/* Mobile Menu */}

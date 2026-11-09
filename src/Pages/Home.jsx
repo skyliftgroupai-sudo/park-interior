@@ -7,6 +7,7 @@ import OurWork from './OurWork'
 import HowWeWork from './HowWeWork'
 import ExperienceSection from './Experinece'
 import ContactSection from './Contact'
+import AreasServed from './AreasServed'
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <OurWork/>
       <HowWeWork/>
       <ExperienceSection/>
+      <AreasServed/>
       {/* <ContactSection/> */}
     </div>
   )
