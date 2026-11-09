@@ -8,6 +8,7 @@ import {
 import { NavLink } from "react-router-dom";
 import Logo from "../assets/park-interior.webp";
 import QuotePopup from "./QuotePopup";
+import { AREAS } from "../data/areas";
 
 
 export default function Navbar() {
@@ -58,19 +59,7 @@ export default function Navbar() {
         { title: "Siding", slug: "siding" },
     ];
 
-    const area = [
-        { title: "Burlington, VT", slug: "burlington-vt" },
-        { title: "South Burlington, VT", slug: "south-burlington-vt" },
-        { title: "Milton, VT", slug: "milton-vt" },
-        { title: "Richmond, VT", slug: "richmond-vt" },
-        { title: "Hinesburg, VT", slug: "hinesburg-vt" },
-        { title: "Colchester, VT", slug: "colchester-vt" },
-        { title: "Fairfax, VT", slug: "fairfax-vt" },
-        { title: "Underhill, VT", slug: "underhill-vt" },
-        { title: "Jericho, VT", slug: "jericho-vt" },
-        { title: "Essex, VT", slug: "essex-vt" },
-        { title: "Shelburne, VT", slug: "shelburne-vt" },
-    ];
+    const area = AREAS.map((a) => ({ title: `${a.name}, VT`, slug: a.slug }));
 
 
     return (
@@ -330,22 +319,6 @@ export default function Navbar() {
                         </button>
                     </div>
 
-                            {/* Service Areas (mobile) */}
-                            <div className="mt-8 pt-6 border-t border-gray-200">
-                                <p className="text-sm font-semibold uppercase tracking-wide text-gray-500 mb-3">Service Areas</p>
-                                <div className="grid grid-cols-2 gap-x-4 gap-y-3 text-base">
-                                    {area.map((a) => (
-                                        <NavLink
-                                            key={a.slug}
-                                            to={`/${a.slug}`}
-                                            className={({ isActive }) => (isActive ? "text-[#c1a944]" : "hover:text-[#c1a944] transition")}
-                                            onClick={() => setMobileMenu(false)}
-                                        >
-                                            {a.title}
-                                        </NavLink>
-                                    ))}
-                                </div>
-                            </div>
                 </div>
 
                 {/* Mobile Menu */}
@@ -392,6 +365,24 @@ export default function Navbar() {
                                     </NavLink>
                                 ))}
                             </div>
+
+                            {/* Service Areas (mobile) */}
+                            <div className="mt-8 pt-6 border-t border-gray-200">
+                                <p className="text-sm font-semibold uppercase tracking-wide text-gray-500 mb-3">Service Areas</p>
+                                <div className="grid grid-cols-2 gap-x-4 gap-y-3 text-base">
+                                    {area.map((a) => (
+                                        <NavLink
+                                            key={a.slug}
+                                            to={`/${a.slug}`}
+                                            className={({ isActive }) => (isActive ? "text-[#c1a944]" : "hover:text-[#c1a944] transition")}
+                                            onClick={() => setMobileMenu(false)}
+                                        >
+                                            {a.title}
+                                        </NavLink>
+                                    ))}
+                                </div>
+                            </div>
+
                         </div>
 
                         {/* Bottom CTA - Opens Popup */}

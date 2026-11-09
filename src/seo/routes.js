@@ -130,7 +130,10 @@ export const routes = {
   "/fairfax-vt": city("Fairfax"),
   "/underhill-vt": city("Underhill"),
   "/jericho-vt": city("Jericho"),
-  "/essex-vt": city("Essex", " and Essex Junction"),
+  "/essex-vt": city("Essex"),
+  "/essex-junction-vt": city("Essex Junction"),
+  "/williston-vt": city("Williston"),
+  "/winooski-vt": city("Winooski"),
   "/shelburne-vt": city("Shelburne"),
 };
 

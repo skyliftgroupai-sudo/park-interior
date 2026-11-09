@@ -2,20 +2,9 @@ import { Link } from "react-router-dom";
 import { PhoneCall, CheckCircle2 } from "lucide-react";
 import { SITE_URL, PHONE } from "../seo/routes";
 import { servicePages } from "../data/servicePages";
+import { AREAS as AREA_LIST } from "../data/areas";
 
-const AREAS = [
-  ["Burlington", "burlington-vt"],
-  ["South Burlington", "south-burlington-vt"],
-  ["Essex", "essex-vt"],
-  ["Colchester", "colchester-vt"],
-  ["Shelburne", "shelburne-vt"],
-  ["Jericho", "jericho-vt"],
-  ["Underhill", "underhill-vt"],
-  ["Milton", "milton-vt"],
-  ["Richmond", "richmond-vt"],
-  ["Hinesburg", "hinesburg-vt"],
-  ["Fairfax", "fairfax-vt"],
-];
+const AREAS = AREA_LIST.map((a) => [a.name, a.slug]);
 
 function schemaFor(page) {
   const url = `${SITE_URL}/${page.slug}`;
