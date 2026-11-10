@@ -98,7 +98,8 @@ export default function Footer() {
               { name: "Framing", slug: "framing" },
               { name: "Drywall", slug: "drywall" },
               { name: "Flooring", slug: "flooring" },
-              { name: "Painting", slug: "painting" }
+              { name: "Painting", slug: "painting" },
+              { name: "Commercial Interiors", slug: "commercial-interiors" }
             ].map((service, i) => (
               <li key={i} className="hover:text-[#c1a944] transition cursor-pointer">
                 <Link to={`/${service.slug}`}>{service.name}</Link>

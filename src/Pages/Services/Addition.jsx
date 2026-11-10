@@ -168,6 +168,29 @@ export default function HomeAddition() {
                 </div>
             </section>
 
+            {/* COST GUIDES */}
+            <section className="py-16 px-6" aria-label="Home addition cost guides">
+                <div className="max-w-4xl mx-auto">
+                    <h2 className="text-3xl font-bold mb-6">Planning an Addition? Start With Real Numbers</h2>
+                    <ul className="grid sm:grid-cols-2 gap-3">
+                        {[
+                            ["/blog/home-addition-cost-vermont", "Home Addition Cost in Vermont"],
+                            ["/blog/sunroom-addition-cost-vermont", "Sunroom Addition Cost"],
+                            ["/blog/garage-addition-cost-vermont", "Garage Addition Cost"],
+                            ["/blog/mudroom-addition-cost-vermont", "Mudroom Addition Cost"],
+                            ["/blog/in-law-suite-addition-cost-vermont", "In-Law Suite & ADU Cost"],
+                            ["/blog/metal-vs-wood-studs", "Metal vs. Wood Studs"],
+                        ].map(([href, label]) => (
+                            <li key={href}>
+                                <a href={href} className="block border border-gray-200 rounded-xl px-5 py-4 font-semibold hover:border-[#c1a944] hover:text-[#a08a2c] transition">
+                                    {label} &rarr;
+                                </a>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            </section>
+
             {/* CTA */}
             <section className="py-20 px-6 bg-[#c1a944] text-center" aria-label="Get a free home addition quote">
                 <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">

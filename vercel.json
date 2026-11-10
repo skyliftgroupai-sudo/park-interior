@@ -148,7 +148,7 @@
     },
     {
       "source": "/acoustical-ceilings",
-      "destination": "/home-renovations",
+      "destination": "/commercial-interiors",
       "permanent": true
     },
     {
@@ -194,6 +194,11 @@
     {
       "source": "/home-additions",
       "destination": "/home-addition",
+      "permanent": true
+    },
+    {
+      "source": "/commercial",
+      "destination": "/commercial-interiors",
       "permanent": true
     },
     {

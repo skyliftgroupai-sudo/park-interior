@@ -104,6 +104,11 @@ export const routes = {
     description: `LVP, hardwood, laminate and tile flooring installed over a properly prepped subfloor in Burlington and Chittenden County, VT. Free estimate: 802-777-0951.`,
     priority: 0.8,
   },
+  "/commercial-interiors": {
+    title: `Commercial Interior Contractor in Burlington, VT | Fit-Outs & Metal Framing | ${BRAND}`,
+    description: `Commercial interior fit-outs in Burlington and Chittenden County, VT: tenant improvements, office and retail build-outs, metal stud framing, drywall and acoustical ceilings. Free bid: 802-777-0951.`,
+    priority: 0.9,
+  },
   "/roofing": {
     title: `Roofing Contractor in Vermont | Roof Repair & Replacement | ${BRAND}`,
     description: `Roof installation, repair and replacement built for Vermont weather. Licensed roofing from ${BRAND} in Burlington and Chittenden County. Free estimate.`,

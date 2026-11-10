@@ -14,8 +14,10 @@ import blog5Img from "../../assets/blog/blog5.webp";
 import blog6Hero from "../../assets/blog/blog-hero6.webp";
 import blog6Img from "../../assets/blog/blog6.webp";
 import costGuides from "./costGuides";
+import costGuides2 from "./costGuides2";
 
 const blogs = [
+    ...costGuides2,
     ...costGuides,
     {
         slug: "quality-home-remodeling-in-jericho",
@@ -45,7 +47,7 @@ const blogs = [
             },
             {
                 type: "p",
-                text: "Every renovation starts with your goals and grows through thoughtful design decisions. We improve kitchens, bathrooms, drywall, painting, roofing, siding and complete home interiors or designs. Our renovation approach creates attractive spaces that match your daily routines perfectly. Professional Jericho Home Renovation helps every room feel welcoming, useful, and enjoyable.",
+                text: "Every renovation starts with your goals and grows through thoughtful design decisions. We improve kitchens, bathrooms, drywall, painting, flooring, basements and complete home interiors or designs. Our renovation approach creates attractive spaces that match your daily routines perfectly. Professional Jericho Home Renovation helps every room feel welcoming, useful, and enjoyable.",
             },
             {
                 type: "h2",
@@ -77,7 +79,7 @@ const blogs = [
             },
             {
                 type: "p",
-                text: "Whole-home renovations improve every area while creating a connected living environment successfully. We update interiors through drywall repairs, painting, roofing, siding, and complete remodeling services. Every improvement supports better functionality while increasing home comfort for every family member. Quality home remodeling creates beautiful homes that match changing lifestyles and personal goals. We complete every renovation carefully while respecting your vision from the beginning until completion. Every finished project reflects quality craftsmanship and thoughtful planning without unnecessary design changes.",
+                text: "Whole-home renovations improve every area while creating a connected living environment successfully. We update interiors through drywall repairs, painting, flooring, basement finishing, and complete remodeling services. Every improvement supports better functionality while increasing home comfort for every family member. Quality home remodeling creates beautiful homes that match changing lifestyles and personal goals. We complete every renovation carefully while respecting your vision from the beginning until completion. Every finished project reflects quality craftsmanship and thoughtful planning without unnecessary design changes.",
             },
             {
                 type: "h3",
@@ -130,7 +132,7 @@ const blogs = [
             {
                 question: "What home improvement services do you provide?",
                 answer:
-                    "We complete kitchens, bathrooms, drywall repairs, painting, roofing and siding projects. We also handle complete home remodelling services. Park Interiors delivers customized renovations for every homeowner.",
+                    "We complete kitchens, bathrooms, drywall repairs, painting, flooring, basement finishing and home addition projects. We also handle complete home remodelling services. Park Interiors delivers customized renovations for every homeowner.",
             },
             {
                 question: "Why should homeowners choose complete home renovations?",
@@ -175,7 +177,7 @@ const blogs = [
             },
             {
                 type: "p",
-                text: "Careful design strategy transforms regular spaces into fun spaces for daily living. Our speciality areas are kitchens, bathrooms, drywall, painting, roofing, and entire home renovations. We design rooms that are comfortable to live in but do not lose functionality or beauty. Enjoy a well-rounded home with the help of professional services in residential interior design.",
+                text: "Careful design strategy transforms regular spaces into fun spaces for daily living. Our speciality areas are kitchens, bathrooms, drywall, painting, flooring, and entire home renovations. We design rooms that are comfortable to live in but do not lose functionality or beauty. Enjoy a well-rounded home with the help of professional services in residential interior design.",
             },
             {
                 type: "img",
@@ -220,7 +222,7 @@ const blogs = [
             },
             {
                 type: "p",
-                text: "Complete home renovations integrate all the rooms with a uniform design and improvement. Remodeling spaces that increase comfort, visual appeal, and functionality of the home is successful. Every project makes seamless transitions between current spaces and remodelled living spaces. Interior Design Services make it possible for homeowners to experience ordered areas that have enduring quality and beautiful finishes. Any interior painting, drywall repairs, roofing, and siding improvements work great in bolstering the home's overall appearance. We finish each refurbishment job meticulously, completely understanding and respecting the vision and expectations of each homeowner.",
+                text: "Complete home renovations integrate all the rooms with a uniform design and improvement. Remodeling spaces that increase comfort, visual appeal, and functionality of the home is successful. Every project makes seamless transitions between current spaces and remodelled living spaces. Interior Design Services make it possible for homeowners to experience ordered areas that have enduring quality and beautiful finishes. Any interior painting, drywall repairs and new flooring work great in bolstering the home's overall appearance. We finish each refurbishment job meticulously, completely understanding and respecting the vision and expectations of each homeowner.",
             },
             {
                 type: "h3",
@@ -295,7 +297,7 @@ const blogs = [
             },
             {
                 type: "p",
-                text: "Get your home upgrade started now and get it done with trusted local home renovation services expert. Looking for a trustworthy Home Renovation Service Near Me? Home Renovation Services Near Me aid homeowners in rapidly improving their homes' comfort, design, and value. Park Interiors offers full kitchen and bathroom renovations, painting, roofing, home add-ons, and siding services.",
+                text: "Get your home upgrade started now and get it done with trusted local home renovation services expert. Looking for a trustworthy Home Renovation Service Near Me? Home Renovation Services Near Me aid homeowners in rapidly improving their homes' comfort, design, and value. Park Interiors offers full kitchen and bathroom renovations, painting, home additions, basement finishing and flooring services.",
                 links: [
                     { text: "Home Renovation Service Near Me", url: "/home-renovations" },
                 ],
@@ -315,7 +317,7 @@ const blogs = [
             },
             {
                 type: "p",
-                text: "With good planning and work, reliable renovation experts can enhance home spaces. Home Renovation Services Near Me can assist homeowners by locating trusted professionals for all their home projects. We take the necessary steps to work carefully in kitchens, baths, drywall, painting, roofing, and exterior improvements. All renovations are designed for durability, comfort, and long-term home value. Our team has the ability to design in a way that is easy to conform to modern family needs and is functional as well. Experienced contractors guarantee project success and quality renovation results, every time. Homeowners looking to upgrade their home do not have to exceed their budget, with the help of Affordable Home Renovation Company solutions.",
+                text: "With good planning and work, reliable renovation experts can enhance home spaces. Home Renovation Services Near Me can assist homeowners by locating trusted professionals for all their home projects. We take the necessary steps to work carefully in kitchens, baths, drywall, painting, flooring, and framing. All renovations are designed for durability, comfort, and long-term home value. Our team has the ability to design in a way that is easy to conform to modern family needs and is functional as well. Experienced contractors guarantee project success and quality renovation results, every time. Homeowners looking to upgrade their home do not have to exceed their budget, with the help of Affordable Home Renovation Company solutions.",
             },
             {
                 type: "h3",
@@ -323,7 +325,7 @@ const blogs = [
             },
             {
                 type: "p",
-                text: "Local contractors are more aware of the regional needs, materials, and construction standards. We provide bespoke renovation solutions to suit the home's design and layout. Property strengthening and valuation are also enhanced with roof and siding upgrades. All projects are effective in enhancing functionality, comfort, and the long-term value of the property. Local home renovation services help in better communication and enhanced results.",
+                text: "Local contractors are more aware of the regional needs, materials, and construction standards. We provide bespoke renovation solutions to suit the home's design and layout. Property strengthening and valuation are also enhanced with a finished basement or a well-built addition. All projects are effective in enhancing functionality, comfort, and the long-term value of the property. Local home renovation services help in better communication and enhanced results.",
             },
             {
                 type: "h2",
@@ -353,7 +355,7 @@ const blogs = [
             },
             {
                 type: "p",
-                text: "Whole home redecoration enhances structure, design, and comfort in all rooms. Home renovation services offer full home renovation services for contemporary living. Complete painting, drywall, roof, siding, and remodelling jobs are done carefully. Every upgrade is effective and adds to the aesthetic, strength, and property value of the home. We always have a consistent design flow throughout the renovated areas. Good craftsmanship provides long-lasting performance and durability. One of the main functions of Affordable Home Renovation Company is to enable homeowners to handle home improvement expenses wisely.",
+                text: "Whole home redecoration enhances structure, design, and comfort in all rooms. Home renovation services offer full home renovation services for contemporary living. Complete painting, drywall, flooring, framing, and remodelling jobs are done carefully. Every upgrade is effective and adds to the aesthetic, strength, and property value of the home. We always have a consistent design flow throughout the renovated areas. Good craftsmanship provides long-lasting performance and durability. One of the main functions of Affordable Home Renovation Company is to enable homeowners to handle home improvement expenses wisely.",
             },
             {
                 type: "h3",
@@ -425,7 +427,7 @@ const blogs = [
         seo: {
             metaTitle: "Top Home Renovation Services to Increase Your Property Value",
             metaDescription:
-                "Increase your property value with top home renovation services, including kitchen, bathroom, roofing, and whole-home improvements.",
+                "Increase your property value with top home renovation services, including kitchen, bathroom, basement, and whole-home improvements.",
             keywords:
                 "Home Renovation Services, Top Home Renovation Services, Home Improvement Services, Residential Renovation Contractors, kitchen renovation, bathroom renovation, property value, Park Interiors",
         },
@@ -438,7 +440,7 @@ const blogs = [
             },
             {
                 type: "p",
-                text: "Make smarter decisions when renovating your home and make it better today. Looking for increased comfort and greater property value in a hurry? Home Renovation Services are designed to assist homeowners in improving their homes with sensible, enduring renovations. Park Interiors offers top home renovation Services, including kitchen, bathroom, painting, roofing, siding, and home addition services.",
+                text: "Make smarter decisions when renovating your home and make it better today. Looking for increased comfort and greater property value in a hurry? Home Renovation Services are designed to assist homeowners in improving their homes with sensible, enduring renovations. Park Interiors offers top home renovation Services, including kitchen, bathroom, painting, basement finishing, flooring, and home addition services.",
                 links: [
                     { text: "Home Renovation Services", url: "/home-renovations" },
                 ],
@@ -490,7 +492,7 @@ const blogs = [
             },
             {
                 type: "p",
-                text: "Whole home remodeling enhances the structure, flow, and comfort in all rooms. Renovation services renovate several areas in order to form a single living space. We take every precaution when painting, installing drywall, roofing, siding, and making structural changes. Each renovation enhances both the interior and exterior appearance and strength of the home. We are 100% committed to a consistent residential interior design throughout all the renovated areas. A Residential Renovation Contractor leads the entire residential renovation process and plans it in an organized manner. Proper craftsmanship gives years and years of enhancements, adding greatly to the value of the property.",
+                text: "Whole home remodeling enhances the structure, flow, and comfort in all rooms. Renovation services renovate several areas in order to form a single living space. We take every precaution when painting, installing drywall, flooring, and making structural changes. Each renovation enhances both the interior and exterior appearance and strength of the home. We are 100% committed to a consistent residential interior design throughout all the renovated areas. A Residential Renovation Contractor leads the entire residential renovation process and plans it in an organized manner. Proper craftsmanship gives years and years of enhancements, adding greatly to the value of the property.",
                 links: [
                     {
                         text: "residential interior design",
@@ -761,7 +763,7 @@ const blogs = [
             },
             {
                 type: "p",
-                text: "Every renovation project needs careful planning and craftsmanship from experienced professionals every day. We improve kitchens, bathrooms, drywall or painting, roofing, siding, and complete home additions effectively. Our team creates beautiful spaces that increase comfort while improving everyday functionality naturally. Underhill Home Remodeling helps homeowners enjoy practical living spaces with lasting value.",
+                text: "Every renovation project needs careful planning and craftsmanship from experienced professionals every day. We improve kitchens, bathrooms, drywall or painting, flooring, basements, and complete home additions effectively. Our team creates beautiful spaces that increase comfort while improving everyday functionality naturally. Underhill Home Remodeling helps homeowners enjoy practical living spaces with lasting value.",
             },
             {
                 type: "img",
@@ -812,7 +814,7 @@ const blogs = [
             },
             {
                 type: "p",
-                text: "Complete renovations improve every area while creating balanced living spaces for modern families. Home renovation connects kitchens, bathrooms, and shared spaces through thoughtful renovation planning. We repair drywall, apply fresh paint, improve roofing, install siding, and build home additions. Every service strengthens comfort while improving overall home appearance and everyday functionality. Our experienced team completes every project with careful attention and dependable workmanship. We create renovation solutions that match homeowner goals with lasting quality and value.",
+                text: "Complete renovations improve every area while creating balanced living spaces for modern families. Home renovation connects kitchens, bathrooms, and shared spaces through thoughtful renovation planning. We repair drywall, apply fresh paint, install new flooring, finish basements, and build home additions. Every service strengthens comfort while improving overall home appearance and everyday functionality. Our experienced team completes every project with careful attention and dependable workmanship. We create renovation solutions that match homeowner goals with lasting quality and value.",
             },
             {
                 type: "h3",
@@ -864,7 +866,7 @@ const blogs = [
             {
                 question: "Which renovation projects improve property value?",
                 answer:
-                    "Kitchen, bathroom, roofing, and siding improvements increase property value successfully. Complete renovations create stronger long-term investment benefits.",
+                    "Kitchen, bathroom, basement, and flooring improvements increase property value successfully. Complete renovations create stronger long-term investment benefits.",
             },
             {
                 question: "Why does careful renovation planning matter?",

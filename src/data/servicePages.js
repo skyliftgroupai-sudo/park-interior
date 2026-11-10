@@ -310,6 +310,59 @@ export const servicePages = {
     related: ["kitchen-remodeling", "basement-finishing", "bathroom-remodeling", "drywall"],
     ctaTitle: "Ready for New Floors?",
   },
+  "commercial-interiors": {
+    slug: "commercial-interiors",
+    serviceName: "Commercial Interior Construction",
+    image: drywallImg,
+    h1: "Commercial Interior Contractor in Burlington & Chittenden County, VT",
+    intro:
+      "Park Interiors builds out commercial interiors across Burlington, South Burlington, Williston and the rest of Chittenden County: tenant fit-outs, office and retail build-outs, metal stud framing, drywall, acoustical ceilings, paint and flooring. We’re a licensed and insured contractor that keeps the schedule tight so your space opens on time.",
+    offeringsTitle: "Commercial Interior Services",
+    offeringsIntro: "Interior construction for offices, retail spaces and other commercial tenants and owners.",
+    offerings: [
+      { title: "Tenant fit-outs & improvements", text: "Turning a vacant or second-generation space into a finished office, shop or studio, built to the lease drawings and the landlord’s work letter." },
+      { title: "Office build-outs", text: "Private offices, conference rooms, break rooms and open work areas, framed, finished and ready for furniture." },
+      { title: "Retail interiors", text: "Sales floors, fitting rooms, stockrooms and back-of-house walls, scheduled around your opening date." },
+      { title: "Metal stud framing", text: "Light-gauge steel framing for partitions, soffits and bulkheads, laid out from the plans and ready for inspection." },
+      { title: "Drywall & finishing", text: "Hanging, taping and finishing, including fire-rated and sound-rated assemblies where the drawings call for them." },
+      { title: "Acoustical (drop) ceilings", text: "Suspended grid and tile ceilings for offices and retail, with layout coordinated around lighting and HVAC." },
+    ],
+    localTitle: "Commercial Fit-Outs in Chittenden County",
+    localBody: [
+      "Most commercial interior work around Burlington is tenant improvement: a business signs a lease, and the space has to be built out before opening day. That puts the schedule first. We work from your architect’s or landlord’s drawings and sequence framing, inspections, drywall, ceilings and finishes so they don’t stack up, keeping you updated on the critical path.",
+      "Commercial work in Vermont can involve more review than residential, including state fire-safety requirements for buildings used by the public. We build to the approved drawings and coordinate with your design team, electrician and mechanical contractor so inspections go smoothly.",
+      "We can work after hours or in phases when a building stays occupied, and we keep dust, noise and deliveries under control so neighboring tenants aren’t disrupted.",
+    ],
+    processNoun: "Commercial Fit-Out",
+    process: [
+      { title: "Walkthrough & drawing review", text: "We walk the space, review your drawings and lease requirements, and flag anything that affects cost or schedule." },
+      { title: "Itemized bid", text: "A line-by-line price for framing, drywall, ceilings, doors, paint and flooring, with clear exclusions." },
+      { title: "Schedule & coordination", text: "A schedule built backward from your opening date, coordinated with the landlord, design team and other trades." },
+      { title: "Build", text: "Metal stud framing, inspections, drywall, ceilings, doors and finishes, with regular progress updates." },
+      { title: "Punch list & handover", text: "We walk the finished space with you, close out the punch list and hand it over clean and ready to move in." },
+    ],
+    costNoun: "a Commercial Fit-Out",
+    costIntro: "Commercial interiors are priced from the drawings and a site walkthrough. The main cost drivers are:",
+    costFactors: [
+      "Square footage, and how much of the space needs new walls vs. reusing existing ones",
+      "Fire-rated or sound-rated wall assemblies called for in the drawings",
+      "Ceiling type: acoustical grid, drywall or open ceiling",
+      "After-hours or phased work in an occupied building",
+      "Finish level: paint, flooring, doors and hardware",
+      "Schedule: compressed timelines need more crew on site",
+    ],
+    costLink: { to: "/blog/metal-vs-wood-studs", label: "Metal Studs vs. Wood Studs: Cost, Pros and Cons" },
+    faqs: [
+      { q: "Do you do commercial tenant fit-outs in Burlington?", a: "Yes. We build out office, retail and other commercial interiors across Burlington, South Burlington, Williston and Chittenden County." },
+      { q: "Can you work from my architect’s drawings?", a: "Yes. We bid and build from your architect’s or landlord’s drawings and coordinate with your design team." },
+      { q: "Do you install acoustical drop ceilings?", a: "Yes. We install suspended grid and tile ceilings and coordinate the layout with lighting and HVAC." },
+      { q: "Can you work after hours in an occupied building?", a: "Yes. We can phase work or schedule it after hours to keep neighboring tenants and your business running." },
+      { q: "Can you provide a certificate of insurance?", a: "Park Interiors is licensed and insured. Ask and we’ll send a certificate of insurance to your landlord or property manager." },
+      { q: "How fast can you start?", a: "It depends on the size of the job and our current schedule. Call 802-777-0951 with your target opening date and we’ll give you a straight answer." },
+    ],
+    related: ["framing", "drywall", "flooring", "home-renovations"],
+    ctaTitle: "Planning a Commercial Build-Out?",
+  },
 };
 
 // Lightweight display info for pages that live elsewhere but appear in "Related Services".
@@ -323,4 +376,5 @@ export const coreServiceSlugs = [
   "framing",
   "drywall",
   "flooring",
+  "commercial-interiors",
 ];
