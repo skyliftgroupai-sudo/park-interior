@@ -13,7 +13,7 @@ const Gallery = () => {
                     completed by Park Interiors for homeowners across Chittenden County, Vermont.
                 </p>
             </section>
-            <OurWork />
+            <OurWork showBeforeAfter />
         </div>
     )
 }

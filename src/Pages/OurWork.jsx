@@ -14,11 +14,17 @@ import img10 from "../assets/work/image (1).jpg";
 import img11 from "../assets/work/image (2).jpeg";
 import img12 from "../assets/work/image (2).jpg";
 import img13 from "../assets/work/image3.jpeg";
+import { beforeAfterPhotos } from "../data/projectGallery";
 
 
-const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13];
+const workPhotos = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13].map(
+  (src) => ({ thumb: src, full: src, alt: "Home remodeling project completed by Park Interiors in Vermont" })
+);
 
-export default function OurWork() {
+// showBeforeAfter: the Gallery page shows the Before & After project pairs first
+// (strict Before -> After order), followed by the existing work photos.
+export default function OurWork({ showBeforeAfter = false }) {
+  const images = showBeforeAfter ? [...beforeAfterPhotos, ...workPhotos] : workPhotos;
   const [selectedIndex, setSelectedIndex] = useState(null);
 
   const openPreview = (index) => setSelectedIndex(index);
@@ -74,7 +80,7 @@ export default function OurWork() {
         variants={container}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: true, amount: "some" }}
         className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto"
       >
         {images.map((img, index) => (
@@ -82,12 +88,21 @@ export default function OurWork() {
             key={index}
             variants={item}
             whileHover={{ scale: 1.05 }}
-            className="group cursor-pointer overflow-hidden rounded-xl shadow-md"
+            className="group relative cursor-pointer overflow-hidden rounded-xl shadow-md"
             onClick={() => openPreview(index)}
           >
+            {img.label && (
+              <span className="absolute top-3 left-3 z-10 rounded-full bg-black/75 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">
+                {img.label}
+              </span>
+            )}
             <motion.img
-              src={img}
-              alt="work"
+              src={img.thumb}
+              alt={img.label ? `${img.alt} (${img.label.toLowerCase()})` : img.alt}
+              width={img.width}
+              height={img.height}
+              loading="lazy"
+              decoding="async"
               className="w-full h-64 object-cover"
               whileHover={{ scale: 1.15 }}
               transition={{ duration: 0.4 }}
@@ -113,13 +128,18 @@ export default function OurWork() {
 
           {/* Image */}
           <img
-            src={images[selectedIndex]}
-            alt="preview"
+            src={images[selectedIndex].full}
+            alt={images[selectedIndex].alt}
             className="max-h-[80vh] max-w-[90vw] rounded-lg shadow-lg"
           />
 
           {/* Counter */}
-          <div className="absolute bottom-6 text-white text-sm">
+          <div className="absolute bottom-6 text-white text-sm text-center">
+            {images[selectedIndex].label && (
+              <span className="block font-semibold mb-1">
+                {images[selectedIndex].title}: {images[selectedIndex].label}
+              </span>
+            )}
             {selectedIndex + 1} / {images.length}
           </div>
 
