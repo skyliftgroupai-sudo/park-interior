@@ -3,6 +3,7 @@ import heroImg from "../../assets/painting/image1.webp";
 import img1 from "../../assets/painting/image3.webp";
 import img2 from "../../assets/painting/image2.webp";
 import img3 from "../../assets/painting/image4.jpg";
+import { openQuotePopup } from "../../utils/quotePopup";
 
 const fadeUp = {
     hidden: { opacity: 0, y: 40 },
@@ -182,7 +183,7 @@ export default function Painting() {
                 </p>
 
 
-                <a href="/contact-us"
+                <a href="/contact-us" onClick={openQuotePopup}
                     className="inline-block bg-black text-white px-8 py-3 rounded-full hover:bg-white hover:text-black transition"
                     aria-label="Get a free painting quote from Park Interiors"
                 >

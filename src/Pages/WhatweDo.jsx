@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Roofing from "../assets/work/work (4).png"
 import Siding from "../assets/work/work (1).png"
 import Remodeling from "../assets/work/work (2).png"
+import { openQuotePopup } from "../utils/quotePopup";
 
 export default function WhatweDo() {
 
@@ -82,7 +83,8 @@ export default function WhatweDo() {
                             <div className="flex justify-center gap-4 flex-wrap">
                                 {/* Get a Quote */}
                                 <a
-                                    href="tel:+1802-777-0951"
+                                    href="/contact-us"
+                                    onClick={openQuotePopup}
                                 >
                                     <button
                                         className="inline-flex items-center gap-2 px-5 py-2.5 

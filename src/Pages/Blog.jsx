@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Calendar, User, ArrowRight, Clock } from "lucide-react";
 import blogs from "./Blog/blogData";
+import { openQuotePopup } from "../utils/quotePopup";
 
 const fadeUp = {
     hidden: { opacity: 0, y: 40 },
@@ -122,7 +123,7 @@ export default function Blog() {
                     remodeling or interior design project to life.
                 </p>
                 <a
-                    href="/contact-us"
+                    href="/contact-us" onClick={openQuotePopup}
                     className="inline-block bg-black text-white px-8 py-3 rounded-full hover:bg-white hover:text-black transition"
                 >
                     Get a Quote

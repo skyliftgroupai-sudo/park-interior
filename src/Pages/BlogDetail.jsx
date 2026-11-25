@@ -11,6 +11,7 @@ import {
     ArrowRight,
 } from "lucide-react";
 import blogs from "./Blog/blogData";
+import { openQuotePopup } from "../utils/quotePopup";
 
 const fadeUp = {
     hidden: { opacity: 0, y: 40 },
@@ -271,7 +272,7 @@ export default function BlogDetail() {
                         your family truly deserves.
                     </p>
                     <a
-                        href="/contact-us"
+                        href="/contact-us" onClick={openQuotePopup}
                         className="inline-block bg-[#c1a944] text-black px-8 py-3 rounded-full font-semibold hover:bg-black hover:text-white transition"
                     >
                         Get a Quote
