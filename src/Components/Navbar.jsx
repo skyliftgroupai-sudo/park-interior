@@ -8,6 +8,7 @@ import {
 import { NavLink } from "react-router-dom";
 import Logo from "../assets/park-interior.webp";
 import QuotePopup from "./QuotePopup";
+import { QUOTE_POPUP_EVENT } from "../utils/quotePopup";
 import { AREAS } from "../data/areas";
 
 
@@ -22,6 +23,13 @@ export default function Navbar() {
         }, 3000); // 3 second delay before auto-popup
 
         return () => clearTimeout(timer);
+    }, []);
+
+    // Open popup from any "Get a Quote" button on the site
+    useEffect(() => {
+        const open = () => setQuotePopup(true);
+        window.addEventListener(QUOTE_POPUP_EVENT, open);
+        return () => window.removeEventListener(QUOTE_POPUP_EVENT, open);
     }, []);
 
     // Lock background scroll when mobile menu is open
@@ -156,7 +164,7 @@ export default function Navbar() {
                     </button> */}
 
                     <button
-                        onClick={() => { window.location.href = "tel:+18027770951"; }}
+                        onClick={() => setQuotePopup(true)}
                         className="bg-[#c1a944] text-black text-lg font-bold px-6 py-2 rounded-full shadow-md border border-transparent transition-all duration-300 hover:bg-black hover:text-white hover:border-[#c1a944] hover:shadow-xl hover:-translate-y-0.5"
                         aria-label="Call us at +1 (802) 777-0951"
                     >
@@ -392,7 +400,7 @@ export default function Navbar() {
                             <button
                                 onClick={() => {
                                     setMobileMenu(false);
-                                    window.location.href = "tel:+18027770951";
+                                    setQuotePopup(true);
                                 }}
                                 className="w-full bg-[#c1a944] text-black font-semibold py-3 rounded-full shadow-md border border-transparent transition-all duration-300 hover:bg-black hover:text-white hover:border-[#c1a944] hover:shadow-lg"
                             >

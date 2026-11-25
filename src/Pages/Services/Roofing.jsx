@@ -5,6 +5,7 @@ import img2 from "../../assets/roofing/img3.webp";
 import img3 from "../../assets/roofing/img4.webp";
 import img4 from "../../assets/roofing/img5.webp";
 import img5 from "../../assets/roofing/img1.webp";
+import { openQuotePopup } from "../../utils/quotePopup";
 
 const fadeUp = {
     hidden: { opacity: 0, y: 40 },
@@ -199,7 +200,7 @@ export default function Roofing() {
                 </p>
 
 
-                <a href="/contact-us"
+                <a href="/contact-us" onClick={openQuotePopup}
                     className="inline-block bg-black text-white px-8 py-3 rounded-full hover:bg-white hover:text-black transition"
                     aria-label="Get a free roofing quote"
                 >

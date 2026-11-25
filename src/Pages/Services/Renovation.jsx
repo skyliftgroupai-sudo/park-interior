@@ -3,6 +3,7 @@ import heroImg from "../../assets/hero/hero3.webp";
 import img1 from "../../assets/work/work1.jpg";
 import img2 from "../../assets/work/work2.webp";
 import img3 from "../../assets/work/work3.webp";
+import { openQuotePopup } from "../../utils/quotePopup";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -222,7 +223,7 @@ export default function HomeRenovation() {
         </p>
 
         <a
-          href="/contact-us"
+          href="/contact-us" onClick={openQuotePopup}
           className="inline-block bg-black text-white px-8 py-3 rounded-full 
                      hover:bg-white hover:text-black transition"
         >
